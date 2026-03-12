@@ -77,7 +77,7 @@ function renderHits(hits) {
   currentFocus = -1;
 }
 
-function renderFallback(query) {
+function renderFallback(_query) {
   searchResults.innerHTML = '<div class="search-empty">Search unavailable — Algolia not configured.</div>';
 }
 
