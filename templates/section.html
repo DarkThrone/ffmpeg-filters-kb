@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block content %}
+<h1>{{ section.title }}</h1>
+<p class="subtitle">{{ section.pages | length }} filters documented</p>
+
+<div class="filter-grid">
+  {% for page in section.pages %}
+  <a href="{{ page.permalink }}" class="filter-card">
+    <div class="filter-card-header">
+      <span class="filter-card-name">{{ page.title }}</span>
+      <span class="badge badge-{{ page.extra.filter_type | default(value='video') }}">{{ page.extra.filter_type | default(value="video") }}</span>
+    </div>
+    <p class="filter-card-desc">{{ page.description }}</p>
+  </a>
+  {% endfor %}
+</div>
+{% endblock content %}

@@ -22,6 +22,33 @@
   p { margin-bottom: $space-sm; }
 }
 
+// Style all Markdown-rendered tables inside content (same as .param-table)
+.content-inner table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $space-xl;
+  font-size: 0.9rem;
+  th {
+    text-align: left;
+    padding: $space-sm $space-md;
+    background: $color-surface;
+    border-bottom: 2px solid $color-border;
+    font-weight: 600;
+    color: $color-text-secondary;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: $space-sm $space-md;
+    border-bottom: 1px solid $color-border;
+    vertical-align: top;
+    code { font-weight: 600; color: $color-text-primary; }
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: $color-surface; }
+}
+
 .expr-vars {
   background: $color-surface;
   border: 1px solid $color-border;
