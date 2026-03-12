@@ -1,0 +1,22 @@
+base_url = "https://darkthrone.github.io/ffmpeg-filters-kb"
+title = "FFmpeg Filters"
+description = "A modern reference for FFmpeg audio and video filters — with detailed parameters, examples, and searchable documentation."
+default_language = "en"
+compile_sass = true
+generate_feeds = false
+minify_html = false
+
+taxonomies = [
+  { name = "category" },
+  { name = "tags" },
+]
+
+[markdown]
+[markdown.highlighting]
+theme = "github-light"
+
+[extra]
+algolia_app_id = ""
+algolia_search_key = ""
+algolia_index = "ffmpeg_filters"
+site_version = "cohort-1"
