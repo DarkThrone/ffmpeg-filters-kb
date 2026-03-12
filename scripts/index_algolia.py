@@ -16,6 +16,7 @@ Usage:
 import os
 import sys
 import json
+import tomllib
 import frontmatter
 from pathlib import Path
 from algoliasearch.search_client import SearchClient
@@ -23,7 +24,21 @@ from algoliasearch.search_client import SearchClient
 CONTENT_DIR = Path("content/filters")
 INDEX_NAME  = os.environ.get("ALGOLIA_INDEX", "ffmpeg_filters")
 
+def get_base_path() -> str:
+    """Extract the URL path prefix from config.toml (e.g. '/ffmpeg-filters-kb')."""
+    try:
+        with open("config.toml", "rb") as f:
+            config = tomllib.load(f)
+        base_url = config.get("base_url", "").rstrip("/")
+        # Extract just the path component (everything after the host)
+        from urllib.parse import urlparse
+        path = urlparse(base_url).path.rstrip("/")
+        return path  # e.g. "/ffmpeg-filters-kb" or ""
+    except Exception:
+        return ""
+
 def load_records() -> list[dict]:
+    base_path = get_base_path()
     records = []
     for md_file in sorted(CONTENT_DIR.glob("**/*.md")):
         if md_file.name.startswith("_"):
@@ -36,9 +51,9 @@ def load_records() -> list[dict]:
         tags = meta.get("taxonomies", {}).get("tags", [])
         params = meta.get("extra", {}).get("parameters", [])
         description = meta.get("description", "")
-        # Build URL from path: content/filters/video/scale.md -> /filters/video/scale/
+        # Build URL from path: content/filters/video/scale.md -> /ffmpeg-filters-kb/filters/video/scale/
         rel = md_file.relative_to(Path("content"))
-        url = "/" + str(rel.with_suffix("")).replace("\\", "/") + "/"
+        url = base_path + "/" + str(rel.with_suffix("")).replace("\\", "/") + "/"
 
         records.append({
             "objectID": f"{category}-{name}",
