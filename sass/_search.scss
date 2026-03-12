@@ -1,0 +1,67 @@
+// Search modal overlay
+.search-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 200;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+  &.open { display: flex; }
+}
+
+.search-box {
+  background: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  width: 560px;
+  max-width: 90vw;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  padding: $space-md;
+  border-bottom: 1px solid $color-border;
+  gap: $space-sm;
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: $font-body;
+    color: $color-text-primary;
+    background: transparent;
+    &::placeholder { color: $color-text-muted; }
+  }
+  .search-icon { color: $color-text-muted; }
+}
+
+.search-results {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-hit {
+  display: block;
+  padding: $space-sm $space-lg;
+  cursor: pointer;
+  border-bottom: 1px solid $color-border;
+  transition: background $transition-fast;
+  text-decoration: none;
+  &:last-child { border-bottom: none; }
+  &:hover, &.focused { background: $color-surface; }
+  .hit-name { font-weight: 600; color: $color-text-primary; font-size: 0.95rem; }
+  .hit-desc { font-size: 0.825rem; color: $color-text-secondary; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+  .hit-badge { float: right; margin-top: 2px; }
+}
+
+.search-empty {
+  padding: $space-xl;
+  text-align: center;
+  color: $color-text-muted;
+  font-size: 0.875rem;
+}

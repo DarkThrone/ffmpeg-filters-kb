@@ -1,0 +1,39 @@
+// Color palette
+$color-bg:            #FFFFFF;
+$color-surface:       #F9FAFB;
+$color-border:        #E5E7EB;
+$color-border-strong: #D1D5DB;
+$color-text-primary:  #111827;
+$color-text-secondary:#6B7280;
+$color-text-muted:    #9CA3AF;
+$color-accent:        #2563EB;
+$color-accent-hover:  #1D4ED8;
+$color-code-bg:       #F3F4F6;
+$color-badge-audio:   #059669; // green
+$color-badge-video:   #7C3AED; // violet
+
+// Typography
+$font-body:   'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+$font-mono:   'JetBrains Mono', 'Fira Code', monospace;
+
+// Sizes
+$font-size-base:  16px;
+$line-height-body: 1.7;
+$sidebar-width:   260px;
+$content-max-width: 760px;
+
+// Spacing
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 40px;
+$space-2xl: 64px;
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-base: 250ms ease;
+
+// Breakpoints
+$bp-mobile: 768px;
+$bp-tablet: 1024px;

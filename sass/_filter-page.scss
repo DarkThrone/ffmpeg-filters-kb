@@ -1,0 +1,35 @@
+.filter-header {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-md;
+  margin-bottom: $space-xl;
+  padding-bottom: $space-xl;
+  border-bottom: 1px solid $color-border;
+
+  h1 { margin-bottom: $space-sm; }
+  .filter-meta { display: flex; gap: $space-sm; align-items: center; margin-bottom: $space-md; }
+  .filter-description { font-size: 1.1rem; color: $color-text-secondary; line-height: 1.6; max-width: 600px; }
+}
+
+.quick-start {
+  margin-bottom: $space-xl;
+  h2 { margin-top: 0; }
+}
+
+.example-block {
+  margin-bottom: $space-xl;
+  h3 { margin-top: 0; }
+  p { margin-bottom: $space-sm; }
+}
+
+.expr-vars {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $space-md $space-lg;
+  margin-bottom: $space-xl;
+  h3 { margin-top: 0; }
+  table { width: 100%; font-size: 0.875rem; }
+  td { padding: 4px $space-sm; }
+  td:first-child code { color: $color-accent; }
+}

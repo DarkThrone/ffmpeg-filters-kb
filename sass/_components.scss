@@ -1,0 +1,205 @@
+// Badge (audio / video / type)
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  &.badge-audio { background: #D1FAE5; color: $color-badge-audio; }
+  &.badge-video { background: #EDE9FE; color: $color-badge-video; }
+  &.badge-type { background: $color-code-bg; color: $color-text-secondary; border: 1px solid $color-border; }
+}
+
+// Copy button on code blocks
+.copy-btn {
+  position: absolute;
+  top: $space-sm;
+  right: $space-sm;
+  background: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  color: $color-text-secondary;
+  cursor: pointer;
+  transition: all $transition-fast;
+  &:hover { background: $color-border; color: $color-text-primary; }
+  &.copied { color: $color-badge-audio; border-color: $color-badge-audio; }
+}
+
+// Icon button (search, sidebar toggle)
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid $color-border;
+  background: transparent;
+  cursor: pointer;
+  color: $color-text-secondary;
+  transition: all $transition-fast;
+  &:hover { background: $color-surface; color: $color-text-primary; }
+}
+
+// Search trigger button in header
+.search-trigger {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  padding: 6px 12px;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  background: $color-surface;
+  cursor: pointer;
+  color: $color-text-secondary;
+  font-size: 0.875rem;
+  transition: all $transition-fast;
+  &:hover { border-color: $color-border-strong; color: $color-text-primary; }
+  kbd {
+    font-family: $font-mono;
+    font-size: 0.7rem;
+    background: $color-bg;
+    border: 1px solid $color-border;
+    border-radius: 3px;
+    padding: 1px 5px;
+  }
+}
+
+// Parameter table
+.param-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $space-xl;
+  font-size: 0.9rem;
+  th {
+    text-align: left;
+    padding: $space-sm $space-md;
+    background: $color-surface;
+    border-bottom: 2px solid $color-border;
+    font-weight: 600;
+    color: $color-text-secondary;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: $space-sm $space-md;
+    border-bottom: 1px solid $color-border;
+    vertical-align: top;
+    &:first-child code { font-weight: 600; color: $color-text-primary; }
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: $color-surface; }
+}
+
+// See also links
+.see-also {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+  margin-top: $space-md;
+  a {
+    padding: 4px 12px;
+    border: 1px solid $color-border;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    color: $color-accent;
+    background: $color-surface;
+    &:hover { border-color: $color-accent; text-decoration: none; }
+  }
+}
+
+// Sidebar nav
+.sidebar-nav {
+  padding: $space-md 0;
+
+  .nav-section { margin-bottom: $space-md; }
+  .nav-section-title {
+    padding: $space-xs $space-md;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-text-muted;
+  }
+  .nav-item {
+    display: block;
+    padding: 5px $space-md 5px 20px;
+    font-size: 0.875rem;
+    color: $color-text-secondary;
+    border-left: 2px solid transparent;
+    transition: all $transition-fast;
+    &:hover { color: $color-text-primary; background: $color-border; text-decoration: none; }
+    &.active { color: $color-accent; border-left-color: $color-accent; background: #EFF6FF; font-weight: 500; }
+  }
+}
+
+// Keyboard shortcuts modal
+.kbd-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  &.open { display: flex; }
+
+  .kbd-modal-box {
+    background: $color-bg;
+    border: 1px solid $color-border;
+    border-radius: 12px;
+    padding: $space-xl;
+    width: 400px;
+    max-width: 90vw;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+  h3 { margin-top: 0; margin-bottom: $space-lg; }
+  .kbd-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-sm 0;
+    border-bottom: 1px solid $color-border;
+    font-size: 0.875rem;
+    color: $color-text-secondary;
+    &:last-child { border-bottom: none; }
+  }
+  kbd {
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    background: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: $color-text-primary;
+  }
+}
+
+// Subtitle text (used in section listings)
+.subtitle { color: $color-text-secondary; font-size: 1rem; line-height: 1.5; }
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: $space-md;
+  margin-top: $space-xl;
+}
+
+.filter-card {
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $space-md;
+  display: block;
+  text-decoration: none;
+  transition: all $transition-fast;
+  background: $color-bg;
+  &:hover { border-color: $color-accent; box-shadow: 0 2px 12px rgba(37,99,235,0.08); text-decoration: none; }
+  .filter-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: $space-xs; }
+  .filter-card-name { font-weight: 600; color: $color-text-primary; font-size: 0.95rem; }
+  .filter-card-desc { font-size: 0.825rem; color: $color-text-secondary; line-height: 1.5; margin: 0; }
+}
