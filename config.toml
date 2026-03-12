@@ -16,7 +16,7 @@ taxonomies = [
 theme = "github-light"
 
 [extra]
-algolia_app_id = ""
-algolia_search_key = ""
+algolia_app_id = "LZY7L8K47D"
+algolia_search_key = "d4695195598a0f10fe0e97072416c156"
 algolia_index = "ffmpeg_filters"
 site_version = "cohort-1"
