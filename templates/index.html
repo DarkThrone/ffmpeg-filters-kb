@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}FFmpeg Filters Reference{% endblock title %}
+
+{% block content %}
+<div style="padding: 48px 0 32px;">
+  <h1>FFmpeg Filters Reference</h1>
+  <p style="font-size: 1.1rem; color: #6B7280; margin-top: 12px; max-width: 520px;">
+    A modern, searchable reference for FFmpeg audio and video filters — detailed parameters, practical examples, and source-informed documentation.
+  </p>
+  <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+    <a href="{{ get_url(path='filters/video/_index.md') }}" class="badge badge-video" style="font-size: 0.9rem; padding: 8px 16px;">Video Filters</a>
+    <a href="{{ get_url(path='filters/audio/_index.md') }}" class="badge badge-audio" style="font-size: 0.9rem; padding: 8px 16px;">Audio Filters</a>
+  </div>
+</div>
+{% endblock content %}
