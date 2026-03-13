@@ -5,18 +5,25 @@
 // ─── Sidebar ────────────────────────────────────────────────────────────────
 const sidebar = document.getElementById('sidebar');
 const sidebarToggle = document.getElementById('sidebar-toggle');
+const sidebarEdgeToggle = document.getElementById('sidebar-edge-toggle');
+
+function setSidebarCollapsed(collapsed) {
+  sidebar.classList.toggle('collapsed', collapsed);
+  document.body.classList.toggle('sidebar-collapsed', collapsed);
+  localStorage.setItem('sidebar-collapsed', collapsed);
+}
 
 function toggleSidebar() {
-  sidebar.classList.toggle('collapsed');
-  localStorage.setItem('sidebar-collapsed', sidebar.classList.contains('collapsed'));
+  setSidebarCollapsed(!sidebar.classList.contains('collapsed'));
 }
 
 // Restore sidebar state from localStorage
 if (localStorage.getItem('sidebar-collapsed') === 'true') {
-  sidebar.classList.add('collapsed');
+  setSidebarCollapsed(true);
 }
 
 sidebarToggle.addEventListener('click', toggleSidebar);
+sidebarEdgeToggle.addEventListener('click', toggleSidebar);
 
 // ─── Search Modal ────────────────────────────────────────────────────────────
 const searchModal  = document.getElementById('search-modal');

@@ -48,9 +48,10 @@
     <div class="sidebar-nav">
       {% set sections_paths = "filters/video/_index.md|filters/audio/_index.md|filters/sources/_index.md|filters/visualization/_index.md|filters/analysis/_index.md|filters/interlace/_index.md|filters/utility/_index.md" | split(pat="|") %}
       {% set sections_titles = "Video Filters|Audio Filters|Test Sources|Visualization|Analysis & QC|Interlace & Telecine|Utility & Timing" | split(pat="|") %}
+      {% set sections_cats = "video|audio|source|visualization|analysis|interlace|utility" | split(pat="|") %}
       {% for i in range(end=7) %}
         {% set sec = get_section(path=sections_paths[i]) %}
-        <div class="nav-section">
+        <div class="nav-section nav-cat-{{ sections_cats[i] }}">
           <div class="nav-section-title">{{ sections_titles[i] }}</div>
           {% for page in sec.pages %}
             <a class="nav-item {% if current_path == page.path %}active{% endif %}"
@@ -60,6 +61,13 @@
       {% endfor %}
     </div>
   </nav>
+
+  <!-- Sidebar edge collapse toggle -->
+  <button class="sidebar-edge-toggle" id="sidebar-edge-toggle" aria-label="Toggle sidebar">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+  </button>
 
   <!-- Main Content -->
   <main class="main-content" id="main-content">

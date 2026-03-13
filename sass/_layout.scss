@@ -20,6 +20,43 @@
   display: flex;
   height: calc(100vh - 56px);
   overflow: hidden;
+  position: relative;
+}
+
+// Collapsible sidebar edge toggle — always visible, straddles sidebar/content border
+.sidebar-edge-toggle {
+  position: fixed;
+  left: calc(#{$sidebar-width} - 12px);
+  top: 116px; // 56px header + 60px offset
+  z-index: 200;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: $color-bg;
+  border: 1px solid $color-border;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-text-secondary;
+  padding: 0;
+  transition: left $transition-base, box-shadow $transition-fast, color $transition-fast;
+
+  svg { transition: transform $transition-base; display: block; }
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    color: $color-text-primary;
+    border-color: $color-border-strong;
+  }
+
+  @media (max-width: $bp-mobile) { display: none; }
+}
+
+body.sidebar-collapsed .sidebar-edge-toggle {
+  left: 4px;
+  svg { transform: rotate(180deg); }
 }
 
 .sidebar {

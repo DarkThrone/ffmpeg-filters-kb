@@ -12,7 +12,7 @@
   &.badge-source        { background: #FEF3C7; color: $color-badge-sources; }
   &.badge-visualization { background: #CFFAFE; color: $color-badge-visualization; }
   &.badge-analysis      { background: #FEE2E2; color: $color-badge-analysis; }
-  &.badge-interlace     { background: #F3F4F6; color: $color-badge-interlace; }
+  &.badge-interlace     { background: #E0F2FE; color: $color-badge-interlace; }
   &.badge-utility       { background: #E0E7FF; color: $color-badge-utility; }
   &.badge-type { background: $color-code-bg; color: $color-text-secondary; border: 1px solid $color-border; }
 }
@@ -130,6 +130,17 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: $color-text-muted;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    &::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: currentColor;
+    }
   }
   .nav-item {
     display: block;
@@ -142,6 +153,15 @@
     &.active { color: $color-accent; border-left-color: $color-accent; background: #EFF6FF; font-weight: 500; }
   }
 }
+
+// Nav section header colors (dot + text) per category
+.nav-cat-video         .nav-section-title { color: $color-badge-video; }
+.nav-cat-audio         .nav-section-title { color: $color-badge-audio; }
+.nav-cat-source        .nav-section-title { color: $color-badge-sources; }
+.nav-cat-visualization .nav-section-title { color: $color-badge-visualization; }
+.nav-cat-analysis      .nav-section-title { color: $color-badge-analysis; }
+.nav-cat-interlace     .nav-section-title { color: $color-badge-interlace; }
+.nav-cat-utility       .nav-section-title { color: $color-badge-utility; }
 
 // Keyboard shortcuts modal
 .kbd-modal {
