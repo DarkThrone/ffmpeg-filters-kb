@@ -60,3 +60,22 @@
   td { padding: 4px $space-sm; }
   td:first-child code { color: $color-accent; }
 }
+
+@media (max-width: $bp-mobile) {
+  .filter-header {
+    flex-direction: column;
+    gap: $space-sm;
+    margin-bottom: $space-lg;
+    padding-bottom: $space-lg;
+
+    .filter-description { font-size: 1rem; max-width: 100%; }
+  }
+
+  .quick-start, .example-block {
+    margin-bottom: $space-lg;
+  }
+
+  .expr-vars {
+    padding: $space-sm $space-md;
+  }
+}
