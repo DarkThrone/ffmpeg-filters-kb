@@ -122,24 +122,24 @@
 .sidebar-nav {
   padding: $space-md 0;
 
-  .nav-section { margin-bottom: $space-md; }
+  .nav-section { margin-bottom: $space-sm; }
   .nav-section-title {
-    padding: $space-xs $space-md;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    padding: 10px $space-md 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
     color: $color-text-muted;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     &::before {
       content: '';
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
+      width: 3px;
+      height: 14px;
+      border-radius: 2px;
       flex-shrink: 0;
       background: currentColor;
+      opacity: 0.9;
     }
   }
   .nav-item {
@@ -154,7 +154,7 @@
   }
 }
 
-// Nav section header colors (dot + text) per category
+// Nav section header colors (bar + text) per category
 .nav-cat-video         .nav-section-title { color: $color-badge-video; }
 .nav-cat-audio         .nav-section-title { color: $color-badge-audio; }
 .nav-cat-source        .nav-section-title { color: $color-badge-sources; }
