@@ -7,8 +7,13 @@
   text-transform: uppercase;
   padding: 2px 8px;
   border-radius: 4px;
-  &.badge-audio { background: #D1FAE5; color: $color-badge-audio; }
-  &.badge-video { background: #EDE9FE; color: $color-badge-video; }
+  &.badge-audio         { background: #D1FAE5; color: $color-badge-audio; }
+  &.badge-video         { background: #EDE9FE; color: $color-badge-video; }
+  &.badge-source        { background: #FEF3C7; color: $color-badge-sources; }
+  &.badge-visualization { background: #CFFAFE; color: $color-badge-visualization; }
+  &.badge-analysis      { background: #FEE2E2; color: $color-badge-analysis; }
+  &.badge-interlace     { background: #F3F4F6; color: $color-badge-interlace; }
+  &.badge-utility       { background: #E0E7FF; color: $color-badge-utility; }
   &.badge-type { background: $color-code-bg; color: $color-text-secondary; border: 1px solid $color-border; }
 }
 

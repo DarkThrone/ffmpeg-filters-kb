@@ -46,22 +46,25 @@
   <!-- Sidebar -->
   <nav class="sidebar" id="sidebar" aria-label="Filter navigation">
     <div class="sidebar-nav">
-      <div class="nav-section">
-        <div class="nav-section-title">Video Filters</div>
-        {% set video_section = get_section(path="filters/video/_index.md") %}
-        {% for page in video_section.pages %}
-          <a class="nav-item {% if current_path == page.path %}active{% endif %}"
-             href="{{ page.permalink }}">{{ page.title }}</a>
-        {% endfor %}
-      </div>
-      <div class="nav-section">
-        <div class="nav-section-title">Audio Filters</div>
-        {% set audio_section = get_section(path="filters/audio/_index.md") %}
-        {% for page in audio_section.pages %}
-          <a class="nav-item {% if current_path == page.path %}active{% endif %}"
-             href="{{ page.permalink }}">{{ page.title }}</a>
-        {% endfor %}
-      </div>
+      {% set nav_sections = [
+        ["Video Filters",        "filters/video/_index.md"],
+        ["Audio Filters",        "filters/audio/_index.md"],
+        ["Test Sources",         "filters/sources/_index.md"],
+        ["Visualization",        "filters/visualization/_index.md"],
+        ["Analysis & QC",        "filters/analysis/_index.md"],
+        ["Interlace & Telecine", "filters/interlace/_index.md"],
+        ["Utility & Timing",     "filters/utility/_index.md"]
+      ] %}
+      {% for nav in nav_sections %}
+        {% set sec = get_section(path=nav[1]) %}
+        <div class="nav-section">
+          <div class="nav-section-title">{{ nav[0] }}</div>
+          {% for page in sec.pages %}
+            <a class="nav-item {% if current_path == page.path %}active{% endif %}"
+               href="{{ page.permalink }}">{{ page.title }}</a>
+          {% endfor %}
+        </div>
+      {% endfor %}
     </div>
   </nav>
 
