@@ -13,6 +13,7 @@ since = ""
 see_also = []
 parameters = ["x", "y", "w", "h", "rx", "ry", "edge", "blocksize", "contrast", "search"]
 cohort = 2
+source_file = "libavfilter/vf_deshake.c"
 +++
 
 The `deshake` filter reduces camera shake by detecting the motion between consecutive frames within a search region and applying an inverse transformation. It operates entirely within a single pass and is straightforward to use, though for best results on heavily shaken footage, the two-pass `vidstabdetect`/`vidstabtransform` workflow (from the `vid.stab` library) provides superior quality.

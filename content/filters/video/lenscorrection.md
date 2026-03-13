@@ -13,6 +13,7 @@ since = ""
 see_also = ["perspective"]
 parameters = ["cx", "cy", "k1", "k2", "i", "fc"]
 cohort = 2
+source_file = "libavfilter/vf_lenscorrection.c"
 +++
 
 The `lenscorrection` filter corrects radial lens distortion — barrel distortion (convex, fisheye-like) or pincushion distortion (concave, telephoto-like) — using quadratic and quartic correction coefficients. The correction is applied around a configurable optical center. This is useful for correcting wide-angle or action camera footage shot with a fisheye lens.

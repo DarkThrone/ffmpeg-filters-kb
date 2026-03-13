@@ -13,6 +13,7 @@ since = ""
 see_also = ["hue", "colorbalance"]
 parameters = ["hue", "saturation", "intensity", "colors", "strength", "rw", "gw", "bw"]
 cohort = 2
+source_file = "libavfilter/vf_huesaturation.c"
 +++
 
 The `huesaturation` filter adjusts hue, saturation, and intensity of video, with optional filtering to target specific color ranges. Unlike the simpler `hue` filter, it allows selective adjustments — for example, shifting only skin tones (reds) or making greens more vibrant without affecting blues. It is closer to the HSL Hue Saturation panel in Lightroom or Photoshop.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["decimate", "pullup", "yadif"]
 parameters = ["order", "mode", "ppsrc", "field", "mchroma", "y0", "y1", "scthresh", "combmatch", "cthresh", "blockx", "blocky", "combpel"]
 cohort = 3
+source_file = "libavfilter/vf_fieldmatch.c"
 +++
 
 The `fieldmatch` filter performs field matching for inverse telecine — it identifies which fields from consecutive frames belong together to reconstruct the original progressive frames, based on algorithms from the AviSynth TFM/TIVTC project. Unlike `pullup`, `fieldmatch` separates matching from frame dropping, so a decimation filter (`decimate`) must follow to remove the duplicate frames. This separation allows inserting a deinterlacer (like `yadif`) between them to handle mixed content.

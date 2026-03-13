@@ -13,6 +13,7 @@ since = ""
 see_also = ["aresample", "amerge", "pan"]
 parameters = ["sample_fmts", "sample_rates", "channel_layouts"]
 cohort = 1
+source_file = "libavfilter/af_aformat.c"
 +++
 
 The `aformat` filter forces the audio stream to conform to one of the formats you specify. FFmpeg's filter negotiation framework will insert the minimum number of automatic conversions needed to satisfy the constraint. It is useful for ensuring downstream filters or encoders receive a compatible format without manually inserting `aresample` or format conversion filters.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["areverse", "setpts", "trim"]
 parameters = []
 cohort = 3
+source_file = "libavfilter/f_reverse.c"
 +++
 
 The `reverse` filter plays a video clip backwards by buffering all frames in memory and then emitting them in reverse order. It requires the complete clip to be buffered before any output is produced. This is commonly used for creative reverse effects, slow-motion reversal, or generating mirror/palindrome edits. Always trim the input first to limit memory usage.

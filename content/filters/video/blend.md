@@ -13,6 +13,7 @@ since = ""
 see_also = ["tblend", "overlay"]
 parameters = ["all_mode", "all_opacity", "all_expr", "c0_mode", "c1_mode", "c2_mode", "c3_mode"]
 cohort = 2
+source_file = "libavfilter/vf_blend.c"
 +++
 
 The `blend` filter composites two video streams using Photoshop-style blending modes. It takes two inputs and applies a per-pixel blend operation to combine them. Each component can have a separate mode and opacity, or all components can share a single `all_mode`. This enables creative effects, colour grading, diffusion glow, and light leaks.

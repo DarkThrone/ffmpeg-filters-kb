@@ -13,6 +13,7 @@ since = ""
 see_also = ["stereotools", "channelmap"]
 parameters = ["m", "c"]
 cohort = 2
+source_file = "libavfilter/af_extrastereo.c"
 +++
 
 The `extrastereo` filter widens or narrows the stereo field by scaling the difference between the left and right channels. A value above 1.0 exaggerates the stereo separation (wider), 1.0 is unchanged, 0.0 collapses to mono, and negative values swap or invert the channels. It is a simple and effective tool for adding perceived "width" or "air" to a stereo mix.

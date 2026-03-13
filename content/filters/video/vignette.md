@@ -13,6 +13,7 @@ since = ""
 see_also = ["exposure", "colorlevels"]
 parameters = ["angle", "x0", "y0", "mode", "eval", "dither", "aspect"]
 cohort = 2
+source_file = "libavfilter/vf_vignette.c"
 +++
 
 The `vignette` filter creates a natural-looking lens vignette by darkening pixels as they get farther from a configurable center point. The angle controls how pronounced the effect is, and a `backward` mode can reverse an existing vignette. The center position and angle support dynamic FFmpeg expressions evaluated per frame.

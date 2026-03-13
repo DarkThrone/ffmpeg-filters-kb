@@ -13,6 +13,7 @@ since = ""
 see_also = ["setpts", "trim", "format"]
 parameters = ["fps", "start_time", "round", "eof_action"]
 cohort = 1
+source_file = "libavfilter/vf_fps.c"
 +++
 
 The `fps` filter converts variable or mismatched frame rates to a specified constant frame rate. It achieves this by duplicating frames when the source rate is too low, and dropping frames when it is too high. This is commonly needed before encoding to a container that requires a fixed frame rate, or when you need to normalize frame rates before stacking or concatenating streams. The filter supports named rate constants such as `ntsc`, `pal`, and `film`.

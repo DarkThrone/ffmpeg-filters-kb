@@ -13,6 +13,7 @@ since = ""
 see_also = ["scale", "pad", "overlay"]
 parameters = ["w", "h", "x", "y", "keep_aspect", "exact"]
 cohort = 1
+source_file = "libavfilter/vf_crop.c"
 +++
 
 The `crop` filter extracts a rectangular sub-region from each video frame by specifying the output width, height, and the top-left corner coordinates within the input frame. Width and height default to the full input dimensions, and coordinates default to the center, so you only need to specify what you want to change. All parameters accept arithmetic expressions evaluated either once at init or per-frame, enabling dynamic panning crops.

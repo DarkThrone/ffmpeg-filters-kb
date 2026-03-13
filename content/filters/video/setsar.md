@@ -13,6 +13,7 @@ since = ""
 see_also = ["scale", "format", "crop"]
 parameters = ["sar", "ratio", "max"]
 cohort = 1
+source_file = "libavfilter/vf_aspect.c"
 +++
 
 The `setsar` filter changes the Sample Aspect Ratio (SAR) metadata of video frames without modifying the actual pixel data. SAR describes the shape of individual pixels (e.g., square pixels have SAR 1:1, while anamorphic SD video often has non-square pixels). Use `setsar` to correct incorrectly tagged SAR metadata, to signal square pixels after a resize operation, or to prepare anamorphic content for display. The companion filter `setdar` sets the Display Aspect Ratio instead.

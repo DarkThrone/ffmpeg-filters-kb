@@ -13,6 +13,7 @@ since = ""
 see_also = ["paletteuse", "scale", "fps"]
 parameters = ["max_colors", "reserve_transparent", "transparency_color", "stats_mode"]
 cohort = 1
+source_file = "libavfilter/vf_palettegen.c"
 +++
 
 The `palettegen` filter analyzes a video stream and generates an optimized 256-color palette image that best represents the colors in the input. This palette is then used by the `paletteuse` filter in a two-pass GIF encoding workflow to produce significantly better-looking GIFs than single-pass approaches. The output is a 256x1 PNG image containing the color palette. `palettegen` and `paletteuse` are designed to be used together.

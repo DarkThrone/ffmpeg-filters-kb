@@ -13,6 +13,7 @@ since = ""
 see_also = ["smartblur", "gblur", "nlmeans"]
 parameters = ["radius", "radiusV", "percentile", "planes"]
 cohort = 2
+source_file = "libavfilter/vf_median.c"
 +++
 
 The `median` filter replaces each pixel with the median value from a rectangular neighborhood, making it highly effective at removing impulse noise (salt-and-pepper noise) while preserving edges better than a Gaussian blur. The `percentile` option generalizes the filter — set it below 0.5 for an erosion-like effect (pick minimum) or above 0.5 for dilation (pick maximum).

@@ -13,6 +13,7 @@ since = ""
 see_also = ["vectorscope", "waveform", "histogram"]
 parameters = ["system", "cie", "gamuts", "size", "intensity", "fill"]
 cohort = 3
+source_file = "libavfilter/vf_ciescope.c"
 +++
 
 The `ciescope` filter renders a CIE 1931 xy chromaticity diagram and plots the colors present in the input video onto it. The horseshoe-shaped diagram represents all visible colors, with white at the center. Each video frame's pixel colors appear as dots or a heatmap, showing how the content's gamut compares to standard color spaces (sRGB, DCI-P3, BT.2020, etc.). It is used in color grading QC to verify gamut compliance and spot out-of-gamut colors.

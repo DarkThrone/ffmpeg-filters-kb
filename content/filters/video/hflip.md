@@ -13,6 +13,7 @@ since = ""
 see_also = ["vflip", "transpose", "rotate"]
 parameters = []
 cohort = 1
+source_file = "libavfilter/vf_hflip.c"
 +++
 
 The `hflip` filter mirrors every frame of the input video along the vertical axis, producing a left-right reflection. It has no parameters and operates in-place without any quality loss. Common use cases include correcting footage shot with a mirror lens rig, fixing front-camera video captured on mobile devices, or creating stylistic mirror effects.

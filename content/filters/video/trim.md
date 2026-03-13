@@ -13,6 +13,7 @@ since = ""
 see_also = ["setpts", "select", "concat"]
 parameters = ["start", "end", "duration", "start_frame", "end_frame", "start_pts", "end_pts"]
 cohort = 1
+source_file = "libavfilter/trim.c"
 +++
 
 The `trim` filter retains one continuous segment of the input video, discarding everything before the start point and everything after the end point. Unlike stream-level seeking (`-ss` / `-t`), `trim` operates at the filter level, which enables accurate frame-level trimming in complex filtergraphs. Note that `trim` does not reset timestamps — chain it with `setpts=PTS-STARTPTS` afterward if you need the output to start at time zero.

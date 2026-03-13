@@ -13,6 +13,7 @@ since = ""
 see_also = ["interlace", "fieldorder", "telecine"]
 parameters = ["mode", "flags", "scan", "lowpass"]
 cohort = 3
+source_file = "libavfilter/vf_tinterlace.c"
 +++
 
 The `tinterlace` filter provides fine-grained temporal field interlacing with multiple operational modes. It can weave fields from consecutive frames into interlaced output (`merge`), drop alternate frames, pad frames with blank lines, or interleave in various patterns. It is the multi-mode predecessor to the simpler `interlace` filter and offers more flexibility for broadcast encoding workflows.

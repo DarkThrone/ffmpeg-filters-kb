@@ -13,6 +13,7 @@ since = ""
 see_also = ["testsrc", "smptebars"]
 parameters = ["size", "rate", "duration", "sar"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `testsrc2` source is nearly identical to `testsrc` but supports more pixel formats beyond the `rgb24` that `testsrc` is limited to. This makes it the preferred choice when testing filters that operate on YUV, planar, or high bit-depth pixel formats, since it avoids a forced format conversion before the test filter.

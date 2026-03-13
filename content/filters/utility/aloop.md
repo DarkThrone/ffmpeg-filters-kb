@@ -13,6 +13,7 @@ since = ""
 see_also = ["loop", "areverse", "asetpts"]
 parameters = ["loop", "size", "start", "time"]
 cohort = 3
+source_file = "libavfilter/f_loop.c"
 +++
 
 The `aloop` filter repeats a segment of audio samples N times, buffering a configurable number of samples and replaying them in sequence. It is the audio counterpart to the `loop` video filter and uses the same parameter semantics with samples instead of frames. Common uses include creating seamless music loops, extending short clips, and generating ambient sound loops.

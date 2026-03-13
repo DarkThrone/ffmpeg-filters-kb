@@ -13,6 +13,7 @@ since = ""
 see_also = ["sine", "anoisesrc"]
 parameters = ["exprs", "channel_layout", "sample_rate", "duration", "nb_samples"]
 cohort = 3
+source_file = "libavfilter/aeval.c"
 +++
 
 The `aevalsrc` source generates audio by evaluating a mathematical expression for each sample. It supports multi-channel output with separate expressions per channel, and provides access to sample time (`t`), sample number (`n`), and sample rate (`s`) in the expression. This is the most flexible audio source — any waveform that can be expressed mathematically can be generated.

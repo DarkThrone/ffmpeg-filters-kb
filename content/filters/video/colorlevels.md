@@ -13,6 +13,7 @@ since = ""
 see_also = ["curves", "eq", "colorbalance"]
 parameters = ["rimin", "gimin", "bimin", "aimin", "rimax", "gimax", "bimax", "aimax", "romin", "gomin", "bomin", "aomin", "romax", "gomax", "bomax", "aomax"]
 cohort = 2
+source_file = "libavfilter/vf_colorlevels.c"
 +++
 
 The `colorlevels` filter adjusts the black point, white point, and output range of each color channel independently. Setting the input black and white points remaps the tonal range, allowing you to correct washed-out footage or fix colour casts. It is equivalent to the Levels adjustment tool in Photoshop or Lightroom.

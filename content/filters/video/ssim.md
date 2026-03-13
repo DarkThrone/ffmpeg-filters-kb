@@ -13,6 +13,7 @@ since = ""
 see_also = ["psnr"]
 parameters = ["stats_file"]
 cohort = 2
+source_file = "libavfilter/vf_ssim.c"
 +++
 
 The `ssim` filter computes the Structural Similarity Index Measure (SSIM) between two video streams — typically an original and a processed/compressed copy. SSIM is a perceptual quality metric that models human visual perception better than PSNR by comparing luminance, contrast, and structure. It produces values between 0 and 1, where 1 is identical and values above 0.95 are generally considered high quality.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["flanger", "chorus"]
 parameters = ["in_gain", "out_gain", "delay", "decay", "speed", "type"]
 cohort = 2
+source_file = "libavfilter/af_aphaser.c"
 +++
 
 The `aphaser` filter applies a phaser effect by passing audio through a chain of all-pass filters whose cutoff frequencies are modulated by a low-frequency oscillator (LFO). This creates the characteristic sweeping notches in the frequency spectrum associated with phaser pedals. Unlike a flanger, a phaser does not use a delay line — it produces a smoother, more subtle effect.

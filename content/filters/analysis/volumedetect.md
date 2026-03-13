@@ -13,6 +13,7 @@ since = ""
 see_also = ["ebur128", "replaygain", "volume"]
 parameters = []
 cohort = 3
+source_file = "libavfilter/af_volumedetect.c"
 +++
 
 The `volumedetect` filter scans an audio stream and prints the mean volume (RMS), maximum sample volume, and a histogram of level distribution at the end of the stream. It is the simplest way to determine how much headroom a file has before clipping — essential before normalizing with the `volume` filter. The audio passes through unchanged; there are no parameters to configure.

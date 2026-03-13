@@ -13,6 +13,7 @@ since = ""
 see_also = ["gblur", "boxblur", "unsharp"]
 parameters = ["luma_radius", "luma_strength", "luma_threshold", "chroma_radius", "chroma_strength", "chroma_threshold"]
 cohort = 2
+source_file = "libavfilter/vf_smartblur.c"
 +++
 
 The `smartblur` filter blurs video while intelligently preserving edges and outlines. Unlike a simple Gaussian blur, it uses a threshold to selectively blur flat areas while leaving edges sharp — or, with negative strength values, sharpen detail. Separate parameters control the luma and chroma planes independently.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["equalizer", "highpass", "lowpass"]
 parameters = ["1b", "2b", "3b", "4b", "5b", "6b", "7b", "8b", "9b", "10b", "11b", "12b", "13b", "14b", "15b", "16b", "17b", "18b"]
 cohort = 3
+source_file = "libavfilter/af_superequalizer.c"
 +++
 
 The `superequalizer` filter provides an 18-band graphic equalizer with fixed center frequencies spanning 65 Hz to 20 kHz. Each band gain is set in dB, defaulting to 1.0 (unity, 0 dB). It is the simplest way to apply broadband tonal shaping without the complexity of parametric EQ chains. Typical uses include voice enhancement, music frequency balancing, and correcting room acoustics.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["colorspace"]
 parameters = ["src", "dst"]
 cohort = 2
+source_file = "libavfilter/vf_colormatrix.c"
 +++
 
 The `colormatrix` filter converts video between YCbCr color matrix standards. It is used to correct footage tagged with the wrong matrix or to prepare video for a specific delivery standard. Common uses include converting SD footage from BT.601 to BT.709 for HD deliverables, or handling legacy SMPTE 240M material.

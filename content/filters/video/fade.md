@@ -13,6 +13,7 @@ since = ""
 see_also = ["overlay", "trim", "setpts"]
 parameters = ["type", "start_frame", "nb_frames", "start_time", "duration", "color", "alpha"]
 cohort = 1
+source_file = "libavfilter/vf_fade.c"
 +++
 
 The `fade` filter applies a gradual transparency transition, fading the video in from a solid color (fade-in) or out to a solid color (fade-out). You can target the effect by frame count or by timestamp, making it straightforward to add polished beginnings and endings to clips. When `alpha=1` is set, only the alpha channel is faded, which is useful for compositing workflows.

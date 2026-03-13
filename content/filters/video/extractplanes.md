@@ -13,6 +13,7 @@ since = ""
 see_also = ["mergeplanes", "split", "alphaextract"]
 parameters = ["planes"]
 cohort = 2
+source_file = "libavfilter/vf_extractplanes.c"
 +++
 
 The `extractplanes` filter splits a multi-component video stream into separate single-plane grayscale streams — one per color component. This is useful for processing individual planes independently (e.g. applying different filters to Y and UV planes), analyzing specific channels, or as part of a processing pipeline where planes are later recombined with `mergeplanes`. It is a multiple-output filter and requires `-filter_complex`.

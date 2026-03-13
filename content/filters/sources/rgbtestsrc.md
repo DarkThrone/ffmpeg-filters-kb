@@ -13,6 +13,7 @@ since = ""
 see_also = ["yuvtestsrc", "testsrc", "smptebars"]
 parameters = ["size", "rate", "duration"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `rgbtestsrc` source generates a simple test pattern with red, green, and blue vertical stripes from top to bottom. It is primarily used to diagnose RGB channel order issues — if the red stripe appears blue and vice versa, the input/output channel mapping is swapped.

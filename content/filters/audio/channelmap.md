@@ -13,6 +13,7 @@ since = ""
 see_also = ["channelsplit", "pan", "amerge"]
 parameters = ["map", "channel_layout"]
 cohort = 2
+source_file = "libavfilter/af_channelmap.c"
 +++
 
 The `channelmap` filter remaps input audio channels to output positions, allowing you to reorder channels, extract a subset, duplicate channels, or fix incorrect channel assignments. The `map` parameter uses `|`-separated `input-output` pairs specified by channel name (e.g. `FL`, `FR`, `LFE`) or by index number. This is particularly useful for fixing 5.1 files with incorrectly ordered channels.

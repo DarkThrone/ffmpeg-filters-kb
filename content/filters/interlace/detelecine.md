@@ -13,6 +13,7 @@ since = ""
 see_also = ["telecine", "fieldmatch", "pullup"]
 parameters = ["first_field", "pattern", "start_frame"]
 cohort = 3
+source_file = "libavfilter/vf_detelecine.c"
 +++
 
 The `detelecine` filter performs pattern-based inverse telecine — the exact reverse of the `telecine` filter. It requires knowing the pulldown pattern and phase (start frame) of the telecined stream. When the pattern is known (e.g., content was encoded by the same FFmpeg pipeline using `telecine`), `detelecine` provides a perfect lossless inversion. For content of unknown pattern, use `fieldmatch` + `decimate` instead.

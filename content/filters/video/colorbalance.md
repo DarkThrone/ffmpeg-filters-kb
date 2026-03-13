@@ -13,6 +13,7 @@ since = ""
 see_also = ["hue", "eq", "curves"]
 parameters = ["rs", "gs", "bs", "rm", "gm", "bm", "rh", "gh", "bh", "pl"]
 cohort = 1
+source_file = "libavfilter/vf_colorbalance.c"
 +++
 
 The `colorbalance` filter adjusts the intensity of red, green, and blue channels independently across three tonal regions: shadows (darkest pixels), midtones (medium pixels), and highlights (brightest pixels). Each adjustment is a value from -1.0 to 1.0, where positive shifts the balance toward the primary color and negative shifts it toward the complementary color. This makes it analogous to the Color Balance tool in photo editing applications.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["agate", "silencedetect", "compand"]
 parameters = ["start_periods", "start_duration", "start_threshold", "stop_periods", "stop_duration", "stop_threshold", "detection", "window"]
 cohort = 2
+source_file = "libavfilter/af_silenceremove.c"
 +++
 
 The `silenceremove` filter trims silence from the beginning, end, or middle of audio. Configurable threshold and duration settings control what counts as silence. The `start_periods` parameter controls how many silence periods to skip at the start (typically 1), and `stop_periods` controls the end (negative values enable silence removal from the middle of the audio).

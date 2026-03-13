@@ -13,6 +13,7 @@ since = ""
 see_also = ["vstack", "xstack", "overlay"]
 parameters = ["inputs", "shortest"]
 cohort = 1
+source_file = "libavfilter/vf_stack.c"
 +++
 
 The `hstack` filter places multiple video streams side by side in a single row, producing a wider output frame. All input streams must share the same pixel format and the same height. It is faster than achieving the same result with `overlay` and `pad`, making it the preferred choice for side-by-side video comparisons, dual-camera layouts, and horizontal strip compositions.

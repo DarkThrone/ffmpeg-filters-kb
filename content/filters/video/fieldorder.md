@@ -13,6 +13,7 @@ since = ""
 see_also = ["yadif", "bwdif", "idet"]
 parameters = ["order"]
 cohort = 2
+source_file = "libavfilter/vf_fieldorder.c"
 +++
 
 The `fieldorder` filter changes the field dominance of interlaced video from top-field-first (TFF) to bottom-field-first (BFF) or vice versa. It shifts the picture content by one line and fills the gap with content from the adjacent field, consistent with broadcast field-order conversion. If the input is not interlaced, or is already in the requested field order, the filter passes the video through unchanged.

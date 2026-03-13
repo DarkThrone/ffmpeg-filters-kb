@@ -13,6 +13,7 @@ since = ""
 see_also = ["amerge", "pan", "volume"]
 parameters = ["inputs", "duration", "dropout_transition", "weights", "normalize"]
 cohort = 1
+source_file = "libavfilter/af_amix.c"
 +++
 
 The `amix` filter combines two or more audio streams into one by summing their samples. It supports per-input weighting, automatic volume normalization to prevent clipping, and configurable end-of-stream behavior. Use it to overlay background music with dialogue, combine multiple microphone inputs, or blend any set of audio sources.

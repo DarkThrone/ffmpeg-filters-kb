@@ -13,6 +13,7 @@ since = ""
 see_also = ["extrastereo", "channelmap", "channelsplit"]
 parameters = ["level_in", "level_out", "balance_in", "balance_out", "mode", "slev", "mlev", "base", "delay", "phase"]
 cohort = 2
+source_file = "libavfilter/af_stereotools.c"
 +++
 
 The `stereotools` filter provides a comprehensive set of stereo processing utilities in a single filter: M/S (Mid/Side) encoding and decoding, input/output level and balance control, phase inversion, inter-channel delay, stereo base adjustment, and soft clipping. It is especially useful for mastering, broadcast loudness normalization, and correcting stereo recordings made in M/S microphone technique.

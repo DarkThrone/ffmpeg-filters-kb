@@ -13,6 +13,7 @@ since = ""
 see_also = ["dynaudnorm", "acompressor", "alimiter"]
 parameters = ["I", "LRA", "TP", "measured_I", "measured_LRA", "measured_TP", "measured_thresh", "offset", "linear", "dual_mono", "print_format"]
 cohort = 2
+source_file = "libavfilter/af_loudnorm.c"
 +++
 
 The `loudnorm` filter normalizes audio to EBU R128 loudness standards, targeting integrated loudness (LUFS), loudness range (LU), and true peak (dBTP). In single-pass mode it uses dynamic compression to hit targets in real time. In two-pass mode (`linear=true`), it first measures the file then applies a precise linear gain in the second pass — producing better quality with no dynamic processing.

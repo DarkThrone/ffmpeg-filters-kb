@@ -13,6 +13,7 @@ since = ""
 see_also = ["fieldmatch", "decimate", "dejudder"]
 parameters = ["jl", "jr", "jt", "jb", "sb", "mp"]
 cohort = 3
+source_file = "libavfilter/vf_pullup.c"
 +++
 
 The `pullup` filter performs inverse telecine (IVTC) — it reconstructs the original 24fps or 25fps progressive frames from 29.97fps 3:2 pulldown telecined video. Unlike pattern-based approaches, `pullup` uses look-ahead field matching, making it robust to mixed content (24p telecined + 30i interlaced). The output has variable framerate; use `fps=24000/1001` after `pullup` for NTSC, or `fps=25` for PAL.

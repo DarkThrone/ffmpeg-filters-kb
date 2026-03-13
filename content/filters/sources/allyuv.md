@@ -13,6 +13,7 @@ since = ""
 see_also = ["allrgb", "testsrc"]
 parameters = ["rate", "duration"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `allyuv` source generates a single 4096×4096 frame containing every possible YUV color combination exactly once — the YUV equivalent of `allrgb`. It is useful for testing color conversions, LUT filters, and chroma subsampling effects across the full YUV gamut. Output size is fixed at 4096×4096.

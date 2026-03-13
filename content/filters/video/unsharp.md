@@ -13,6 +13,7 @@ since = ""
 see_also = ["gblur", "smartblur"]
 parameters = ["luma_msize_x", "luma_msize_y", "luma_amount", "chroma_msize_x", "chroma_msize_y", "chroma_amount"]
 cohort = 2
+source_file = "libavfilter/vf_unsharp.c"
 +++
 
 The `unsharp` filter applies an unsharp mask to sharpen or blur the input video. Despite the name, positive `luma_amount` values sharpen the image by amplifying the difference between the original and a blurred copy, while negative values produce a net blur. It can operate on luma, chroma, or both channels independently.

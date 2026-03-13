@@ -13,6 +13,7 @@ since = ""
 see_also = ["sine", "aevalsrc"]
 parameters = ["sample_rate", "amplitude", "duration", "color", "seed", "nb_samples", "density"]
 cohort = 3
+source_file = "libavfilter/asrc_anoisesrc.c"
 +++
 
 The `anoisesrc` source generates noise audio signals with selectable spectral color — white (flat spectrum), pink (−3 dB/octave), brown (−6 dB/octave), blue (+3 dB/octave), violet (+6 dB/octave), or velvet (sparse random spikes). Noise sources are used for acoustic testing, psychoacoustic masking tests, dithering reference signals, and creative audio design.

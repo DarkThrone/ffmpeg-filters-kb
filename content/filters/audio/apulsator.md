@@ -13,6 +13,7 @@ since = ""
 see_also = ["haas", "earwax", "vibrato"]
 parameters = ["level_in", "level_out", "mode", "amount", "offset_l", "offset_r", "width", "timing", "bpm", "ms", "hz"]
 cohort = 3
+source_file = "libavfilter/af_apulsator.c"
 +++
 
 The `apulsator` filter is a stereo LFO (low-frequency oscillator) effect that modulates the volume of the left and right audio channels independently. With `offset_r=0`, it acts as a tremolo (both channels pulse together). With `offset_r=0.5` (default), it acts as an auto-panner (channels alternate 180° out of phase). Intermediate offsets create sweeping, rotating stereo effects. Multiple waveform shapes are available.

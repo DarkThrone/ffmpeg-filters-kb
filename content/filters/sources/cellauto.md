@@ -13,6 +13,7 @@ since = ""
 see_also = ["life", "mandelbrot"]
 parameters = ["rule", "size", "rate", "pattern", "random_fill_ratio", "scroll", "stitch"]
 cohort = 3
+source_file = "libavfilter/vsrc_cellauto.c"
 +++
 
 The `cellauto` source generates video from a 1D elementary cellular automaton using Wolfram's rule numbering (0–255). Each frame row is computed from the previous one using the selected rule, then scrolled upward to fill the frame. The initial state can be a specific pattern string/file or a random seed. Wolfram's Rule 110 (the default) is particularly famous for producing complex, aperiodic patterns.

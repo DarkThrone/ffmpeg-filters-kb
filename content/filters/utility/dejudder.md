@@ -13,6 +13,7 @@ since = ""
 see_also = ["pullup", "fieldmatch", "decimate"]
 parameters = ["cycle"]
 cohort = 3
+source_file = "libavfilter/vf_dejudder.c"
 +++
 
 The `dejudder` filter removes judder from video that has uneven frame durations due to telecine conversion or mixed-cadence sources. Judder is the irregular motion stutter that appears when 24fps film is converted to 29.97fps (NTSC) without proper 3:2 cadence handling — frames alternate between 2-field and 3-field durations. `dejudder` detects the repeating cadence pattern and smooths the output timing. It may change the container's recorded frame rate.

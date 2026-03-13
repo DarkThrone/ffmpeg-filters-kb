@@ -13,6 +13,7 @@ since = ""
 see_also = ["colormatrix", "tonemap"]
 parameters = ["all", "space", "range", "primaries", "trc", "format"]
 cohort = 2
+source_file = "libavfilter/vf_colorspace.c"
 +++
 
 The `colorspace` filter performs comprehensive colorspace conversions, handling the matrix coefficients, color primaries, transfer function (gamma/PQ/HLG), and output pixel format together. It is more complete than `colormatrix` (which only handles the YCbCr matrix) and is suited for accurate conversions between SD, HD, and HDR standards.

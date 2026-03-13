@@ -13,6 +13,7 @@ since = ""
 see_also = ["hqdn3d", "atadenoise", "bm3d"]
 parameters = ["s", "p", "pc", "r", "rc"]
 cohort = 2
+source_file = "libavfilter/vf_nlmeans.c"
 +++
 
 The `nlmeans` filter applies Non-Local Means denoising, a high-quality algorithm that compares small patches across the entire frame to identify similar regions and averages them to suppress noise. It produces excellent results, preserving fine detail and textures that simpler blur-based denoisers destroy. The trade-off is computational cost: it is significantly slower than `hqdn3d` or `atadenoise`.

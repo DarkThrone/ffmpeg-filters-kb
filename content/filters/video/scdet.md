@@ -13,6 +13,7 @@ since = ""
 see_also = ["select"]
 parameters = ["threshold", "sc_pass"]
 cohort = 2
+source_file = "libavfilter/vf_scdet.c"
 +++
 
 The `scdet` filter detects scene changes in video by computing the difference between consecutive frames. It writes a `lavfi.scene_score` metadata value (0–100) to each frame. Frames with a score above the threshold are considered scene changes and can be extracted or processed separately by chaining with the `select` filter.

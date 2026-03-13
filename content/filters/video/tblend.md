@@ -13,6 +13,7 @@ since = ""
 see_also = ["blend"]
 parameters = ["all_mode", "all_opacity", "all_expr", "c0_mode", "c1_mode", "c2_mode", "c3_mode"]
 cohort = 2
+source_file = "libavfilter/vf_blend.c"
 +++
 
 The `tblend` filter is the temporal variant of `blend`: it blends each frame with the previous frame from the same stream. This creates motion blur, ghosting, or temporal smoothing effects without requiring a second input. It accepts the same modes as `blend`.

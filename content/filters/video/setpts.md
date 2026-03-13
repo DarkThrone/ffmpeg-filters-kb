@@ -13,6 +13,7 @@ since = ""
 see_also = ["fps", "trim", "select"]
 parameters = ["expr", "strip_fps"]
 cohort = 1
+source_file = "libavfilter/setpts.c"
 +++
 
 The `setpts` filter replaces the PTS (presentation timestamp) of each video frame with the result of a user-defined expression. This gives precise control over playback speed (fast motion / slow motion), timestamp normalization, fixed-rate output, and custom timing patterns. The audio equivalent is `asetpts`. Because `setpts` only modifies timestamps — not frame content — it is a zero-copy, lossless operation.

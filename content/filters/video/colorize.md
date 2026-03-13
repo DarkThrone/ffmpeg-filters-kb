@@ -13,6 +13,7 @@ since = ""
 see_also = ["hue", "colorbalance"]
 parameters = ["hue", "saturation", "lightness", "mix"]
 cohort = 2
+source_file = "libavfilter/vf_colorize.c"
 +++
 
 The `colorize` filter applies a colored tint to video, similar to the duotone or colorize feature in Photoshop. It maps the video luminance through a specified hue and saturation, replacing all color information while keeping the lightness structure of the original. The `mix` parameter blends between the original and the colorized result.

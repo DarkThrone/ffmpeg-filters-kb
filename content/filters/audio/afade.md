@@ -13,6 +13,7 @@ since = ""
 see_also = ["volume", "atrim", "apad"]
 parameters = ["type", "start_sample", "nb_samples", "start_time", "duration", "curve", "silence", "unity"]
 cohort = 1
+source_file = "libavfilter/af_afade.c"
 +++
 
 The `afade` filter smoothly ramps audio volume from silence to full (fade-in) or from full to silence (fade-out) over a configurable time range. It supports a wide variety of curve shapes — linear, sinusoidal, logarithmic, exponential, and others — giving precise control over the character of the transition. Use it to open and close clips cleanly or to create professional-sounding intro and outro segments.

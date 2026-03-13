@@ -13,6 +13,7 @@ since = ""
 see_also = ["ssim"]
 parameters = ["stats_file", "stats_version", "output_max"]
 cohort = 2
+source_file = "libavfilter/vf_psnr.c"
 +++
 
 The `psnr` filter computes the Peak Signal-to-Noise Ratio between two video streams — typically an original and a compressed or processed version. Higher PSNR (in dB) indicates less distortion. The filter outputs per-frame PSNR values to a file or stderr while passing the first stream through unchanged, making it useful for codec quality evaluation and comparison.

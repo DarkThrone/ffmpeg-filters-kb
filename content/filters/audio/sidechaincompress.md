@@ -13,6 +13,7 @@ since = ""
 see_also = ["acompressor", "sidechaingate"]
 parameters = ["level_in", "mode", "threshold", "ratio", "attack", "release", "makeup", "knee", "link", "detection", "level_sc", "mix"]
 cohort = 2
+source_file = "libavfilter/af_sidechaincompress.c"
 +++
 
 The `sidechaincompress` filter compresses one audio stream based on the level of a second, independent "sidechain" signal. The classic application is "ducking": the background music is compressed whenever a voice-over signal is active, automatically lowering the music volume under speech. It requires `filter_complex` with two audio inputs: the signal to compress and the sidechain trigger.

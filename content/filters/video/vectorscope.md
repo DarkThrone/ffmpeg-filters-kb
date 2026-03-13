@@ -13,6 +13,7 @@ since = ""
 see_also = ["waveform", "histogram", "signalstats"]
 parameters = ["mode", "x", "y", "intensity", "envelope", "graticule", "opacity", "bgopacity", "colorspace"]
 cohort = 2
+source_file = "libavfilter/vf_vectorscope.c"
 +++
 
 The `vectorscope` filter generates a 2D plot of two color components against each other — typically Cb vs. Cr (U vs. V) — creating the classic vectorscope display used in broadcast video production. It reveals color saturation, hue accuracy, and whether colors fall within legal broadcast gamut. Multiple visualization modes provide different ways to inspect the color distribution.

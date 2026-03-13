@@ -13,6 +13,7 @@ since = ""
 see_also = ["eq", "colorbalance"]
 parameters = ["rc", "gm", "by", "rcw", "gmw", "byw", "pl"]
 cohort = 2
+source_file = "libavfilter/vf_colorcontrast.c"
 +++
 
 The `colorcontrast` filter adjusts the contrast between complementary color pairs: red vs. cyan, green vs. magenta, and blue vs. yellow. Positive values push colors toward the primary and away from its complement; negative values do the opposite. Each pair also has a weight parameter (`rcw`, `gmw`, `byw`) to control influence on the final result.

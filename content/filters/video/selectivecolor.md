@@ -13,6 +13,7 @@ since = ""
 see_also = ["huesaturation", "curves"]
 parameters = ["correction_method", "reds", "yellows", "greens", "cyans", "blues", "magentas", "whites", "neutrals", "blacks"]
 cohort = 2
+source_file = "libavfilter/vf_selectivecolor.c"
 +++
 
 The `selectivecolor` filter applies CMYK (Cyan, Magenta, Yellow, Black) color adjustments to specific color families in the image, similar to the Selective Color tool in Photoshop. You can independently adjust cyan/magenta/yellow/black components in nine color ranges: reds, yellows, greens, cyans, blues, magentas, whites, neutrals, and blacks.

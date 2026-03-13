@@ -13,6 +13,7 @@ since = ""
 see_also = ["scale", "crop", "pad"]
 parameters = ["dar", "max"]
 cohort = 3
+source_file = "libavfilter/vf_aspect.c"
 +++
 
 The `setdar` filter sets the Display Aspect Ratio (DAR) of a video stream by changing the Sample Aspect Ratio (SAR) metadata — it does **not** rescale the pixels. This is used to correct mislabeled anamorphic content (e.g., 720×576 material that should display as 16:9 but is incorrectly tagged as 4:3), or to override the aspect ratio for a specific output format.

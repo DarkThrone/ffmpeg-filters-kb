@@ -13,6 +13,7 @@ since = ""
 see_also = ["blockdetect", "blurdetect"]
 parameters = ["low", "high", "radius", "block_pct", "block_width", "block_height", "planes"]
 cohort = 3
+source_file = "libavfilter/vf_blurdetect.c"
 +++
 
 The `blurdetect` filter computes a perceptual blur score for each frame without modifying the video. It is based on the Marziliano no-reference blur metric: it detects edges using Canny thresholding, then measures the spread of local maxima around each edge — wider spread indicates more blur. The score is attached as `lavfi.blur` frame metadata and can be used for automated quality control.

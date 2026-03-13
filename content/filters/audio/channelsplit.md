@@ -13,6 +13,7 @@ since = ""
 see_also = ["channelmap", "amerge", "join"]
 parameters = ["channel_layout", "channels"]
 cohort = 2
+source_file = "libavfilter/af_channelsplit.c"
 +++
 
 The `channelsplit` filter splits a multi-channel audio stream into separate single-channel mono streams — one output per channel. This enables routing individual channels to different outputs, applying per-channel processing, or extracting specific channels (e.g. just the LFE from a 5.1 mix). It is a multiple-output filter and requires `-filter_complex`.

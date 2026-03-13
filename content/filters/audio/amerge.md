@@ -13,6 +13,7 @@ since = ""
 see_also = ["amix", "pan", "aformat"]
 parameters = ["inputs", "layout_mode"]
 cohort = 1
+source_file = "libavfilter/af_amerge.c"
 +++
 
 The `amerge` filter combines multiple audio streams into one multi-channel stream by placing all channels from each input stream side-by-side. Unlike `amix`, which sums the samples of multiple streams together, `amerge` preserves each channel independently. It is the correct tool for assembling a multi-channel file from separate mono or stereo sources.

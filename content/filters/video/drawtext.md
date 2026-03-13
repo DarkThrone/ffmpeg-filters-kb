@@ -13,6 +13,7 @@ since = ""
 see_also = ["drawbox", "overlay", "fade"]
 parameters = ["text", "fontfile", "fontsize", "fontcolor", "x", "y", "box", "boxcolor", "borderw", "bordercolor", "shadowx", "shadowy", "alpha", "expansion", "enable"]
 cohort = 1
+source_file = "libavfilter/vf_drawtext.c"
 +++
 
 The `drawtext` filter renders arbitrary text onto video frames using libfreetype for font rasterization. It supports custom fonts, background boxes, borders, drop shadows, per-frame dynamic text via expansion expressions, and time-based enabling/disabling. This makes it suitable for burned-in subtitles, timecodes, debug overlays, scrolling credits, and watermarks. Requires FFmpeg compiled with `--enable-libfreetype` (and optionally `--enable-libfontconfig` for font name lookup).

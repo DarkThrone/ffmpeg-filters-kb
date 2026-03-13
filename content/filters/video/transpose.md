@@ -13,6 +13,7 @@ since = ""
 see_also = ["rotate", "hflip", "vflip"]
 parameters = ["dir", "passthrough"]
 cohort = 1
+source_file = "libavfilter/vf_transpose.c"
 +++
 
 The `transpose` filter swaps the rows and columns of each video frame to achieve 90-degree rotations combined with optional flipping. It is the preferred method for rotating video by exactly 90 or 270 degrees because it operates as a simple pixel rearrangement with no interpolation, unlike the general `rotate` filter. The `passthrough` option lets you skip the operation when the input is already in the desired orientation.

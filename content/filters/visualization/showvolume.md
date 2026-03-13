@@ -13,6 +13,7 @@ since = ""
 see_also = ["showwaves", "ebur128", "volumedetect"]
 parameters = ["rate", "b", "w", "h", "f", "c", "t", "v", "dm", "dmc", "o", "s", "p", "m", "ds"]
 cohort = 3
+source_file = "libavfilter/avf_showvolume.c"
 +++
 
 The `showvolume` filter produces a real-time volume level meter as a video stream, showing per-channel level bars. It is similar to a hardware VU meter — useful for monitoring recording levels, checking for clipping, or adding a visual level display to a video output. Colors can change based on level (green/yellow/red gradient).

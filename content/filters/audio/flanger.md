@@ -13,6 +13,7 @@ since = ""
 see_also = ["aphaser", "chorus"]
 parameters = ["delay", "depth", "regen", "width", "speed", "shape", "phase", "interp"]
 cohort = 2
+source_file = "libavfilter/af_flanger.c"
 +++
 
 The `flanger` filter applies a flanging effect by mixing the original signal with a slightly delayed copy whose delay time is swept back and forth by a low-frequency oscillator. This creates a characteristic jet-engine or comb-filter sweep sound. It is similar to phasing but uses a physical delay line, producing a more pronounced and metallic-sounding effect.

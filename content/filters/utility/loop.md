@@ -13,6 +13,7 @@ since = ""
 see_also = ["aloop", "reverse", "setpts"]
 parameters = ["loop", "size", "start", "time"]
 cohort = 3
+source_file = "libavfilter/f_loop.c"
 +++
 
 The `loop` filter repeats a segment of video frames N times. By buffering a specified number of frames and replaying them, it can create a seamless loop from any segment of a video. This is useful for creating looping backgrounds, extending short clips, or generating infinite loops for displays.

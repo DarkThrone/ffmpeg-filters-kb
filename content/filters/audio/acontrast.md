@@ -13,6 +13,7 @@ since = ""
 see_also = ["compand", "alimiter", "loudnorm"]
 parameters = ["contrast"]
 cohort = 3
+source_file = "libavfilter/af_acontrast.c"
 +++
 
 The `acontrast` filter applies simple audio contrast enhancement — an automatic gain adjustment that increases the dynamic contrast between loud and quiet passages. It is similar in concept to a waveform shaper: at high `contrast` values it effectively clips and re-shapes the waveform to make audio subjectively louder and more aggressive. It is a quick, single-parameter alternative to a full compander chain.

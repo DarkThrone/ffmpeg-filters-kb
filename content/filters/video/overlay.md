@@ -13,6 +13,7 @@ since = ""
 see_also = ["pad", "scale", "drawtext"]
 parameters = ["x", "y", "eof_action", "eval", "shortest", "format", "repeatlast", "alpha"]
 cohort = 1
+source_file = "libavfilter/vf_overlay.c"
 +++
 
 The `overlay` filter composites two video streams together, placing the second input (the overlay) on top of the first input (the main video) at coordinates given by `x` and `y` expressions. Both inputs must be connected as separate streams using the filtergraph syntax. The filter supports alpha transparency, various output pixel formats, and dynamic position updates per frame, making it useful for watermarking, picture-in-picture, and logo placement.

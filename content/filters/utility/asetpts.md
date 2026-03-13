@@ -13,6 +13,7 @@ since = ""
 see_also = ["setpts", "atempo", "aresample"]
 parameters = ["expr"]
 cohort = 3
+source_file = "libavfilter/setpts.c"
 +++
 
 The `asetpts` filter recomputes PTS values for audio frames using a mathematical expression — the audio equivalent of the `setpts` video filter. It is used to generate synthetic timestamps, fix desync, or adjust audio timing. For speed changes, `atempo` is usually better (it resamples to preserve pitch), but `asetpts` gives direct PTS control for cases where timing surgery is needed.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["highpass", "equalizer", "lowshelf"]
 parameters = ["frequency", "width_type", "width", "poles", "mix", "channels", "normalize", "transform", "precision"]
 cohort = 1
+source_file = "libavfilter/af_biquads.c"
 +++
 
 The `lowpass` filter attenuates frequencies above its cutoff (the 3 dB point) and passes lower frequencies unchanged. Like `highpass`, it uses a biquad IIR design and supports one or two poles. Common uses include anti-aliasing before downsampling, removing high-frequency noise or hiss, and creating a warm or muffled sound effect.

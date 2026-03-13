@@ -13,6 +13,7 @@ since = ""
 see_also = ["ebur128", "replaygain", "volumedetect"]
 parameters = ["length"]
 cohort = 3
+source_file = "libavfilter/af_drmeter.c"
 +++
 
 The `drmeter` filter computes the Dynamic Range score popularized by the DR Loudness War database. It splits the audio into segments, computes the crest factor (peak-to-RMS ratio) for each, and derives a DR value. Higher DR indicates more dynamic, less compressed audio (DR14+ = very dynamic; DR8–13 = typical modern mastering; DR<8 = heavily limited). The audio passes through unchanged.

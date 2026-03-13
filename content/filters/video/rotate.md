@@ -13,6 +13,7 @@ since = ""
 see_also = ["transpose", "hflip", "vflip"]
 parameters = ["angle", "out_w", "out_h", "fillcolor", "bilinear"]
 cohort = 1
+source_file = "libavfilter/vf_rotate.c"
 +++
 
 The `rotate` filter rotates video frames clockwise by an arbitrary angle specified in radians. Unlike `transpose`, which only supports 90-degree increments, `rotate` handles any angle and can animate the rotation per frame using expressions. The output dimensions can be independently controlled, and any uncovered area is filled with a configurable color (or made transparent with `none`). Bilinear interpolation is enabled by default for smooth results.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["framerate", "mpdecimate", "yadif"]
 parameters = ["fps", "mi_mode", "mc_mode", "me_mode", "me", "mb_size", "search_param", "scd"]
 cohort = 2
+source_file = "libavfilter/vf_minterpolate.c"
 +++
 
 The `minterpolate` filter converts video to a target frame rate by synthesizing intermediate frames using motion estimation and compensation — the "motion smoothing" effect seen on modern TVs (sometimes called the "soap opera effect"). It supports multiple motion estimation algorithms and can degrade gracefully at scene changes by detecting them automatically.

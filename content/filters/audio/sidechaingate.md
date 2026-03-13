@@ -13,6 +13,7 @@ since = ""
 see_also = ["agate", "sidechaincompress"]
 parameters = ["level_in", "mode", "range", "threshold", "ratio", "attack", "release", "makeup", "knee", "detection", "link"]
 cohort = 2
+source_file = "libavfilter/af_agate.c"
 +++
 
 The `sidechaingate` filter applies a noise gate controlled by an external sidechain signal rather than the input signal itself. The gate opens when the sidechain exceeds the threshold and closes when it drops below. A classic use case is keying a reverb tail — when a dry vocal drops below the threshold, the reverb send is gated off. It requires `filter_complex` with two audio inputs.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["drawtext", "overlay", "crop"]
 parameters = ["x", "y", "width", "height", "color", "thickness", "replace"]
 cohort = 1
+source_file = "libavfilter/vf_drawbox.c"
 +++
 
 The `drawbox` filter draws a rectangle border (or a filled rectangle) directly onto video frames. It is frequently used for debugging bounding boxes from detection pipelines, highlighting regions of interest, adding visual framing to clips, or creating simple graphic overlays. All geometry parameters accept arithmetic expressions evaluated per frame, enabling animated boxes.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["smartblur", "median"]
 parameters = ["filter", "block", "alpha", "beta", "gamma", "delta", "planes"]
 cohort = 2
+source_file = "libavfilter/vf_deblock.c"
 +++
 
 The `deblock` filter removes the blocky artifacts introduced by strong video compression (such as low-bitrate H.264 or MPEG-2). It detects block boundaries by looking for step edges at regular intervals and smooths them, with configurable thresholds to avoid blurring actual scene edges.

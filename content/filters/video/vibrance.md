@@ -13,6 +13,7 @@ since = ""
 see_also = ["huesaturation", "colorbalance"]
 parameters = ["intensity", "rbal", "gbal", "bbal", "rlum", "glum", "blum", "alternate"]
 cohort = 2
+source_file = "libavfilter/vf_vibrance.c"
 +++
 
 The `vibrance` filter boosts or reduces saturation of muted (less saturated) colors more than already-saturated colors, similar to the Vibrance slider in Adobe Lightroom. This preserves naturally saturated elements like skin tones while making dull colours pop. Negative values reduce vibrance, pushing the image toward more muted or monochromatic tones.

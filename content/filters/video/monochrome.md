@@ -13,6 +13,7 @@ since = ""
 see_also = ["huesaturation"]
 parameters = ["cb", "cr", "size", "high"]
 cohort = 2
+source_file = "libavfilter/vf_monochrome.c"
 +++
 
 The `monochrome` filter converts color video to stylized black-and-white by allowing you to specify the chroma channel contributions to the final luminance. This is analogous to using a colored filter in front of a black-and-white film camera: a red filter makes reds lighter and blues darker. It produces more expressive monochrome conversions than a simple desaturation.

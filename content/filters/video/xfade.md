@@ -13,6 +13,7 @@ since = ""
 see_also = ["fade", "blend"]
 parameters = ["transition", "duration", "offset", "expr"]
 cohort = 2
+source_file = "libavfilter/vf_xfade.c"
 +++
 
 The `xfade` filter creates smooth transition effects between two video streams. It takes two inputs and blends them using one of many built-in transition types (wipes, fades, slides, etc.) or a custom expression. The `offset` parameter controls when the transition starts relative to the first input, and `duration` controls how long it lasts.

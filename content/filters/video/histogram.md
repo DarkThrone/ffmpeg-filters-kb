@@ -13,6 +13,7 @@ since = ""
 see_also = ["waveform", "vectorscope", "signalstats"]
 parameters = ["display_mode", "levels_mode", "components", "level_height", "scale_height", "fgopacity", "bgopacity"]
 cohort = 2
+source_file = "libavfilter/vf_histogram.c"
 +++
 
 The `histogram` filter renders a real-time color histogram for each frame, showing how pixel values are distributed across the 0–255 range for each color component. This is useful for exposure checking, detecting clipping or crushing, and verifying color balance. It supports stacked, parade, and overlay display modes, and linear or logarithmic scaling.

@@ -13,6 +13,7 @@ since = ""
 see_also = []
 parameters = ["1thr", "2thr", "3thr", "4thr", "range", "direction", "blur", "coupling"]
 cohort = 2
+source_file = "libavfilter/vf_deband.c"
 +++
 
 The `deband` filter removes banding artifacts — visible color steps or bands in smooth gradients — that result from insufficient bit depth, aggressive lossy compression, or converting from 10-bit to 8-bit. It works by detecting areas where neighboring pixels have a similar value and smoothing them, replacing hard boundaries with gradual transitions.

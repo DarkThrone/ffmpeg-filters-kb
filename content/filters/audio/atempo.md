@@ -13,6 +13,7 @@ since = ""
 see_also = ["aresample", "atrim", "afade"]
 parameters = ["tempo"]
 cohort = 1
+source_file = "libavfilter/af_atempo.c"
 +++
 
 The `atempo` filter changes the playback speed of audio — making it faster or slower — without altering the pitch. It accepts a tempo scale factor where 1.0 is the original speed, values below 1.0 slow it down, and values above 1.0 speed it up. The supported range per instance is 0.5–100.0. For ratios outside the range 0.5–2.0, FFmpeg skips some samples instead of blending them; to avoid artifacts for large changes, chain multiple `atempo` instances whose product equals the desired ratio.

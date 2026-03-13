@@ -13,6 +13,7 @@ since = ""
 see_also = ["fieldmatch", "pullup", "fps"]
 parameters = ["cycle", "dupthresh", "scthresh", "blockx", "blocky", "ppsrc", "chroma", "mixed"]
 cohort = 3
+source_file = "libavfilter/vf_decimate.c"
 +++
 
 The `decimate` filter removes duplicate frames at regular intervals to reduce frame rate — the second stage of a `fieldmatch` + `decimate` IVTC pipeline. For every N frames (cycle), it identifies the most similar consecutive frame pair and drops one, effectively converting 29.97fps telecined video back to 23.976fps progressive. It can also be used independently to reduce frame rate by dropping duplicate frames in any content.

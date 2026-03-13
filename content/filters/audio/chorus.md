@@ -13,6 +13,7 @@ since = ""
 see_also = ["aphaser", "flanger"]
 parameters = ["in_gain", "out_gain", "delays", "decays", "speeds", "depths"]
 cohort = 2
+source_file = "libavfilter/af_chorus.c"
 +++
 
 The `chorus` filter adds a chorus effect by mixing the original signal with one or more delayed and pitch-modulated copies. The pitch modulation is achieved by oscillating the delay time, simulating the slight timing and pitch variations that occur when multiple voices or instruments play in unison. Each chorus "voice" is defined by a set of delay, decay, speed, and depth values.

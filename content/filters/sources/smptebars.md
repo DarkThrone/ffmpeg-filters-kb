@@ -13,6 +13,7 @@ since = ""
 see_also = ["smptehdbars", "pal100bars", "pal75bars"]
 parameters = ["size", "rate", "duration"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `smptebars` source generates the classic SMPTE EG 1-1990 color bar pattern used in SD (standard definition) broadcast for monitor calibration, signal level testing, and tape leader. The pattern includes the 7 standard colors at 75% amplitude plus the PLUGE sub-black test signal in the lower section.

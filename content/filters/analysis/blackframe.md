@@ -13,6 +13,7 @@ since = ""
 see_also = ["freezedetect", "silencedetect", "scdet"]
 parameters = ["amount", "threshold"]
 cohort = 3
+source_file = "libavfilter/vf_blackframe.c"
 +++
 
 The `blackframe` filter scans each video frame and reports frames where the majority of pixels fall below a configurable luminance threshold. It is commonly used to detect chapter boundaries, bumpers, or commercial breaks — transitions that are often signaled by a black frame. The filter passes video through unchanged and logs detections to stderr.

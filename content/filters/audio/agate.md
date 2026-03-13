@@ -13,6 +13,7 @@ since = ""
 see_also = ["sidechaingate", "acompressor"]
 parameters = ["level_in", "mode", "range", "threshold", "ratio", "attack", "release", "makeup", "knee", "detection", "link", "level_sc"]
 cohort = 2
+source_file = "libavfilter/af_agate.c"
 +++
 
 The `agate` filter applies a noise gate that attenuates (closes) when the signal level drops below the `threshold`, and opens when the level rises above it. It is commonly used to suppress background noise, room tone, or microphone hiss between speech passages. For gating triggered by an external sidechain signal, see `sidechaingate`.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["dynaudnorm", "volume", "equalizer"]
 parameters = ["level_in", "threshold", "ratio", "attack", "release", "makeup", "knee", "link", "detection", "level_sc", "mix", "mode"]
 cohort = 1
+source_file = "libavfilter/af_sidechaincompress.c"
 +++
 
 The `acompressor` filter reduces the dynamic range of an audio signal by attenuating samples that exceed a configurable threshold. Configurable attack and release times control how quickly the gain reduction is applied and withdrawn, while a makeup gain parameter compensates for the resulting drop in overall loudness. It is widely used in broadcast normalization, podcast processing, and music mastering to achieve a consistent, controlled sound.

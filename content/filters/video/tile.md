@@ -13,6 +13,7 @@ since = ""
 see_also = ["hstack", "vstack"]
 parameters = ["layout", "nb_frames", "margin", "padding", "color", "overlap", "init_padding"]
 cohort = 2
+source_file = "libavfilter/vf_tile.c"
 +++
 
 The `tile` filter arranges consecutive input frames into a grid, producing a single output frame that contains a mosaic of multiple frames. It is useful for creating contact sheets, thumbnail previews, or visualizing temporal information across multiple frames at once.

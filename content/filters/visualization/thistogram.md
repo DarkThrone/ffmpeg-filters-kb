@@ -13,6 +13,7 @@ since = ""
 see_also = ["histogram", "waveform", "vectorscope"]
 parameters = ["display_mode", "levels_mode", "components", "level_height", "scale_height", "fgopacity", "bgopacity", "colors_mode", "width", "envelope", "slide"]
 cohort = 3
+source_file = "libavfilter/vf_histogram.c"
 +++
 
 The `thistogram` filter produces a temporal histogram — each column represents the pixel-value histogram of one video frame, and new columns scroll in from the right as the video plays. This creates a time-vs-level display that shows how the exposure and color distribution change over time. It is useful for spotting flicker, brightness ramps, color shifts, or inconsistent grading across a timeline.

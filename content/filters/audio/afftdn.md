@@ -13,6 +13,7 @@ since = ""
 see_also = ["arnndn", "compand", "afir"]
 parameters = ["noise_reduction", "noise_floor", "noise_type", "band_noise", "track_noise", "output_mode"]
 cohort = 2
+source_file = "libavfilter/af_afftdn.c"
 +++
 
 The `afftdn` filter removes noise from audio using FFT-based spectral subtraction. It models the noise floor spectrum and subtracts it from each frame. It supports several built-in noise type profiles (white, vinyl, shellac) and a custom 15-band profile. The noise floor can be tracked automatically over time for varying noise conditions, making it effective for tape hiss, vinyl crackle, and microphone self-noise reduction.

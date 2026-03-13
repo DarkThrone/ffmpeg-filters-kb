@@ -13,6 +13,7 @@ since = ""
 see_also = ["tinterlace", "fieldorder", "yadif"]
 parameters = ["scan", "lowpass"]
 cohort = 3
+source_file = "libavfilter/vf_tinterlace.c"
 +++
 
 The `interlace` filter converts progressive video to interlaced output by interleaving alternating lines from two consecutive input frames. This halves the output frame rate while keeping the full spatial resolution. It is used for broadcast delivery when a progressive source needs to be encoded as interlaced (e.g., 50p → 25i, 60p → 30i). A vertical low-pass filter is available to prevent interlace twitter artifacts.

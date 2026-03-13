@@ -13,6 +13,7 @@ since = ""
 see_also = ["cellauto", "mandelbrot"]
 parameters = ["rule", "size", "rate", "filename", "random_fill_ratio", "stitch", "life_color", "death_color", "mold"]
 cohort = 3
+source_file = "libavfilter/vsrc_life.c"
 +++
 
 The `life` source simulates John Conway's Game of Life — a 2D cellular automaton where each cell lives or dies based on its neighbor count. Each video frame shows one generation. The initial grid can be loaded from a file, or generated randomly. The rule is configurable using the `S/B` notation, allowing other "Life-like" cellular automata beyond the standard `S23/B3` rule.

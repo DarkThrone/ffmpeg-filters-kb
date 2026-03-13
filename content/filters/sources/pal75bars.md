@@ -13,6 +13,7 @@ since = ""
 see_also = ["pal100bars", "smptebars"]
 parameters = ["size", "rate", "duration"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `pal75bars` source generates EBU PAL 75% color bars — the standard European broadcast test signal. The 75% amplitude is the EBU recommended level for color bar generators, matching the output of most European broadcast equipment and VTR leaders. These are the go-to bars for calibrating PAL monitors and VTR decks.

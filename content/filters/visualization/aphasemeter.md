@@ -13,6 +13,7 @@ since = ""
 see_also = ["showwaves", "showvolume", "vectorscope"]
 parameters = ["rate", "size", "rc", "gc", "bc", "mpc", "video", "phasing", "tolerance", "angle", "duration"]
 cohort = 3
+source_file = "libavfilter/avf_aphasemeter.c"
 +++
 
 The `aphasemeter` filter renders a stereo phase meter — a Lissajous-style display where left and right audio channels drive the X and Y axes. When the stereo image is perfectly mono (identical channels), dots cluster on the vertical center line. Wide stereo spreads diagonally, while out-of-phase content spreads horizontally. It can optionally detect and log "out-of-phase" conditions where mono sum would cause cancellation. The audio passes through unchanged.

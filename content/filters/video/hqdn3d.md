@@ -13,6 +13,7 @@ since = ""
 see_also = ["nlmeans", "atadenoise"]
 parameters = ["luma_spatial", "chroma_spatial", "luma_tmp", "chroma_tmp"]
 cohort = 2
+source_file = "libavfilter/vf_hqdn3d.c"
 +++
 
 The `hqdn3d` filter applies a 3D denoiser that combines spatial (within-frame) and temporal (across-frame) lowpass filtering. It is one of the fastest high-quality denoisers in FFmpeg, making it suitable for real-time or near-real-time workflows. The spatial component blurs within each frame; the temporal component averages across consecutive frames to suppress flickering noise.

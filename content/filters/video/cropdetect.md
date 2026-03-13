@@ -13,6 +13,7 @@ since = ""
 see_also = ["crop"]
 parameters = ["limit", "round", "reset", "skip", "mode"]
 cohort = 2
+source_file = "libavfilter/vf_cropdetect.c"
 +++
 
 The `cropdetect` filter analyzes video frames to find the borders of non-black (or non-static) content and outputs the corresponding `crop` filter parameters as frame metadata. It does **not** crop the video itself — it detects what the crop values should be. The detected values are printed to the log; you then run a second pass using `crop` with those values.

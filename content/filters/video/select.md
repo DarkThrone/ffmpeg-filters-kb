@@ -13,6 +13,7 @@ since = ""
 see_also = ["setpts", "trim", "thumbnail"]
 parameters = ["expr", "outputs"]
 cohort = 1
+source_file = "libavfilter/f_select.c"
 +++
 
 The `select` filter evaluates an expression for each input frame and passes or discards the frame based on the result. Frames for which the expression evaluates to zero are dropped; non-zero values route the frame to an output (the integer ceiling of the result minus 1 determines which output index for multi-output use). This enables precise frame selection based on timestamp, frame type (I/P/B), scene change score, key frame status, or any arithmetic combination of these variables.

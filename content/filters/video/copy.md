@@ -13,6 +13,7 @@ since = ""
 see_also = ["null"]
 parameters = []
 cohort = 2
+source_file = "libavfilter/vf_copy.c"
 +++
 
 The `copy` filter passes every video frame through without any modification. It has no parameters and performs no transformation. Its primary uses are: verifying that a filter graph is connected correctly, benchmarking the overhead of the filter graph itself, and forcing a frame copy when sharing the same buffer between multiple filter chains would cause issues.

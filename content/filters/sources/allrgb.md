@@ -13,6 +13,7 @@ since = ""
 see_also = ["allyuv", "testsrc"]
 parameters = ["rate", "duration"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `allrgb` source generates a single 4096×4096 frame (16 million pixels) containing every possible 24-bit RGB color exactly once. It is a mathematically complete color space visualization, useful for testing LUT (Look Up Table) filters, color transforms, and any processing that needs to operate on the entire RGB gamut simultaneously. Output size is fixed at 4096×4096 and cannot be changed.

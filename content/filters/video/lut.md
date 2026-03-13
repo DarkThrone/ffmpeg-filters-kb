@@ -13,6 +13,7 @@ since = ""
 see_also = ["lut3d", "haldclut", "geq"]
 parameters = ["c0", "c1", "c2", "c3", "y", "u", "v", "r", "g", "b", "a"]
 cohort = 2
+source_file = "libavfilter/vf_lut.c"
 +++
 
 The `lut` filter applies a mathematical expression to every pixel of each channel independently, computed once and stored in a lookup table (LUT) for fast evaluation. It supports both YCbCr (`y`, `u`, `v`) and RGB (`r`, `g`, `b`, `a`) addressing, making it suitable for channel inversions, gamma corrections, clamping, and simple color grading effects.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["asetpts", "fps", "trim"]
 parameters = ["expr"]
 cohort = 3
+source_file = "libavfilter/setpts.c"
 +++
 
 The `setpts` filter recomputes the PTS (Presentation Timestamp) of each video frame using a mathematical expression. This is the primary way to change video speed, fix broken timestamps, generate synthetic timestamps, or apply custom timing curves. The expression has access to the current PTS, frame number, timebase, and other variables.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["haldclut", "lut", "colorspace"]
 parameters = ["file", "interp"]
 cohort = 2
+source_file = "libavfilter/vf_lut3d.c"
 +++
 
 The `lut3d` filter loads a 3D Look-Up Table from an external file and applies it to video. Unlike 1D per-channel LUTs, a 3D LUT maps every possible RGB combination to a new color, allowing complex non-linear color transformations that cannot be expressed per-channel. It supports industry-standard formats including `.cube`, `.3dl`, `.dat`, and `.m3d`.

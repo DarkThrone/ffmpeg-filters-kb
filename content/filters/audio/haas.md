@@ -13,6 +13,7 @@ since = ""
 see_also = ["earwax", "apulsator", "extrastereo"]
 parameters = ["level_in", "level_out", "side_gain", "middle_source", "middle_phase", "left_delay", "left_balance", "left_gain", "left_phase", "right_delay", "right_balance", "right_gain", "right_phase"]
 cohort = 3
+source_file = "libavfilter/af_haas.c"
 +++
 
 The `haas` filter implements the Haas effect (also called the precedence effect) — a psychoacoustic technique that creates a sense of stereo width by introducing a small delay (typically 1–40ms) between channels. Applied to mono audio, it makes the signal appear to come from a wider soundstage. The filter gives independent control over the delay, gain, balance, and phase of each output channel.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["psnr", "ssim"]
 parameters = ["detectmode", "nb_inputs", "filename", "format", "th_d", "th_dc", "th_xh", "th_di", "th_it"]
 cohort = 3
+source_file = "libavfilter/vf_signature.c"
 +++
 
 The `signature` filter computes the MPEG-7 Video Signature for near-duplicate detection and content identification. The fingerprint is robust to re-encoding, resizing, and mild color grading. With two inputs, it can compare streams and find matching segments with their time offsets. Signatures can be written as binary or XML files for offline comparison.

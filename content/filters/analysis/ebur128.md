@@ -13,6 +13,7 @@ since = ""
 see_also = ["volumedetect", "replaygain", "loudnorm"]
 parameters = ["video", "size", "meter", "framelog", "metadata", "peak", "dualmono", "panlaw", "target", "gauge", "scale"]
 cohort = 3
+source_file = "libavfilter/f_ebur128.c"
 +++
 
 The `ebur128` filter implements the EBU R128 / ITU-R BS.1770 loudness scanner. It measures Momentary loudness (M, 400 ms window), Short-term loudness (S, 3 s window), Integrated loudness (I, gated over the whole programme), and Loudness Range (LRA). The audio passes through unchanged; statistics are logged to stderr and optionally injected into frame metadata. With `video=1`, a real-time graphing display is produced as a video output stream.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["pal75bars", "smptebars", "smptehdbars"]
 parameters = ["size", "rate", "duration"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `pal100bars` source generates EBU (European Broadcasting Union) PAL color bars at 100% amplitude. Unlike `pal75bars` (75% amplitude) and the SMPTE variants, PAL 100% bars drive the color components to full amplitude, making them useful for peak signal level testing and gamut verification on European broadcast equipment.

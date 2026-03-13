@@ -13,6 +13,7 @@ since = ""
 see_also = ["detelecine", "tinterlace", "fieldmatch"]
 parameters = ["first_field", "pattern"]
 cohort = 3
+source_file = "libavfilter/vf_telecine.c"
 +++
 
 The `telecine` filter applies a pulldown pattern to progressive video, creating the 3:2 field sequence used when converting 24fps film to 29.97fps NTSC broadcast. Each progressive frame is repeated across fields according to the pattern: the classic `23` pattern repeats two frames as 2 fields and one as 3 fields. The filter can also apply non-standard pulldown patterns for other conversion ratios (25→30, 18→30, etc.).

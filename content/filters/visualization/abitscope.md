@@ -13,6 +13,7 @@ since = ""
 see_also = ["showwaves", "aphasemeter", "a3dscope"]
 parameters = ["rate", "size", "colors", "mode"]
 cohort = 3
+source_file = "libavfilter/avf_abitscope.c"
 +++
 
 The `abitscope` filter renders a video visualization of the bit patterns in audio samples. Each horizontal row represents a bit position (MSB at top), and the display scrolls in time showing which bits are set across samples. It is primarily useful for analyzing the true bit depth of audio — distinguishing between genuine 24-bit content and 16-bit audio upsampled to 24-bit (which shows blank lower bits).

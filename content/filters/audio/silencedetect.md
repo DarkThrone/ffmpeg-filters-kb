@@ -13,6 +13,7 @@ since = ""
 see_also = ["apad", "atrim", "dynaudnorm"]
 parameters = ["noise", "duration", "mono"]
 cohort = 1
+source_file = "libavfilter/af_silencedetect.c"
 +++
 
 The `silencedetect` filter analyzes an audio stream and logs a message and metadata whenever the signal level stays at or below a noise threshold for a minimum specified duration. The audio is passed through unmodified. The metadata keys it emits can be used by downstream filters (such as `ametadata`) to cut, split, or annotate the stream at silence boundaries.

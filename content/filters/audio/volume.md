@@ -13,6 +13,7 @@ since = ""
 see_also = ["dynaudnorm", "acompressor", "afade"]
 parameters = ["volume", "precision", "eval", "replaygain", "replaygain_preamp", "replaygain_noclip"]
 cohort = 1
+source_file = "libavfilter/af_volume.c"
 +++
 
 The `volume` filter changes the loudness of an audio stream by multiplying each sample by a configurable gain factor. It accepts simple numeric values, decibel strings like `6dB`, or full mathematical expressions that can reference per-frame variables such as timestamps. Use it whenever you need static level adjustment, loudness matching, or time-varying gain automation.

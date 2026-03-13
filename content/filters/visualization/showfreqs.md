@@ -13,6 +13,7 @@ since = ""
 see_also = ["showcqt", "showwaves", "showvolume"]
 parameters = ["size", "rate", "mode", "ascale", "fscale", "win_size", "overlap", "averaging", "colors", "cmode", "minamp", "data", "channels"]
 cohort = 3
+source_file = "libavfilter/avf_showfreqs.c"
 +++
 
 The `showfreqs` filter renders an FFT-based frequency spectrum display as a video stream. Unlike `showcqt` (which uses a constant-Q transform), `showfreqs` uses a standard FFT with configurable window size, making it suitable for general-purpose spectrum analysis. It supports both bar and line display modes, linear/log frequency and amplitude scales, and per-channel coloring.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["eq", "colorbalance", "colorlevels"]
 parameters = ["preset", "master", "red", "green", "blue", "all"]
 cohort = 2
+source_file = "libavfilter/vf_curves.c"
 +++
 
 The `curves` filter applies cubic spline tone curves to each color channel independently (or all together via `master`). It supports built-in presets for common looks and custom point lists for precise tonal control. It is the FFmpeg equivalent of the Curves tool in Photoshop or Lightroom.

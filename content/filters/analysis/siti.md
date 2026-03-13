@@ -13,6 +13,7 @@ since = ""
 see_also = ["vmafmotion", "ssim", "psnr"]
 parameters = ["print_summary"]
 cohort = 3
+source_file = "libavfilter/vf_siti.c"
 +++
 
 The `siti` filter computes SI and TI metrics from ITU-T Rec. P.910, which are standard measures of visual complexity used in video codec benchmarking and adaptive bitrate research. SI measures spatial detail (via a Sobel edge filter on each frame), while TI measures temporal motion (via frame differencing). Per-frame values are emitted as metadata; an optional summary prints the maximum SI, maximum TI, and mean values at the end of the stream.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["lowpass", "equalizer", "highshelf"]
 parameters = ["frequency", "width_type", "width", "poles", "mix", "channels", "normalize", "transform", "precision"]
 cohort = 1
+source_file = "libavfilter/af_biquads.c"
 +++
 
 The `highpass` filter attenuates frequencies below its cutoff (the 3 dB point) and passes frequencies above it largely unchanged. It is implemented as a biquad IIR filter and supports both single-pole (6 dB/octave) and two-pole (12 dB/octave) configurations. Common uses include removing low-frequency rumble, wind noise, or DC offset from recordings.

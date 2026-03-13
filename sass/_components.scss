@@ -228,3 +228,35 @@
   .filter-card-name { font-weight: 600; color: $color-text-primary; font-size: 0.95rem; }
   .filter-card-desc { font-size: 0.825rem; color: $color-text-secondary; line-height: 1.5; margin: 0; }
 }
+
+// FFmpeg source link in filter header
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $color-text-secondary;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  padding: 2px 8px;
+  text-decoration: none;
+  transition: all $transition-fast;
+  svg { flex-shrink: 0; }
+  &:hover { color: $color-accent; border-color: $color-accent; text-decoration: none; }
+}
+
+// LLM.md nav link at bottom of sidebar
+.nav-llm-link {
+  border-top: 1px solid $color-border;
+  padding: $space-sm 0 $space-md;
+}
+.nav-item-llm {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: $color-text-muted;
+  font-size: 0.8rem;
+  .nav-llm-icon { flex-shrink: 0; }
+  &:hover { color: $color-text-secondary; }
+}

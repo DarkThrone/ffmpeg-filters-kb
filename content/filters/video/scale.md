@@ -13,6 +13,7 @@ since = ""
 see_also = ["crop", "pad", "setsar"]
 parameters = ["w", "h", "flags", "interl", "force_original_aspect_ratio", "force_divisible_by", "in_color_matrix", "out_color_matrix", "eval"]
 cohort = 1
+source_file = "libavfilter/vf_scale.c"
 +++
 
 The `scale` filter resizes video frames to the specified width and height, delegating the actual scaling to the libswscale library. It preserves the display aspect ratio by adjusting the sample aspect ratio, and can also convert between pixel formats as needed by the downstream filter chain. Use it whenever you need to change resolution, fit a video into a target size, or normalize dimensions before encoding.

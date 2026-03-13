@@ -13,6 +13,7 @@ since = ""
 see_also = ["showwaves", "showfreqs"]
 parameters = ["size", "mode", "split_channels", "colors", "scale", "draw", "filter"]
 cohort = 3
+source_file = "libavfilter/avf_showwaves.c"
 +++
 
 The `showwavespic` filter renders the entire waveform of an audio stream into a single static image — the visual equivalent of the waveform view in a DAW or audio editor. Unlike `showwaves` (which produces a scrolling video), `showwavespic` buffers the complete audio and outputs one frame covering the full duration. It is ideal for thumbnail generation, album art waveforms, or batch waveform previews.

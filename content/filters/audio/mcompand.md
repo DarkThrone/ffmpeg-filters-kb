@@ -13,6 +13,7 @@ since = ""
 see_also = ["compand", "loudnorm", "alimiter"]
 parameters = ["args"]
 cohort = 3
+source_file = "libavfilter/af_mcompand.c"
 +++
 
 The `mcompand` filter is a multiband dynamic range processor. It splits audio into frequency bands using 4th-order Linkwitz-Riley crossover filters (the same design used in loudspeaker crossovers, ensuring flat frequency response when all bands are combined at unity gain). Each band has independent attack/decay times and a compander transfer curve defined by input/output point pairs. This enables frequency-aware compression — for example, tighter control of low-frequency dynamics without affecting treble.

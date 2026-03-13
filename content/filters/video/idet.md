@@ -13,6 +13,7 @@ since = ""
 see_also = ["yadif", "bwdif", "fieldorder"]
 parameters = ["intl_thres", "prog_thres", "rep_thres", "half_life", "analyze_interlaced_flag"]
 cohort = 2
+source_file = "libavfilter/vf_idet.c"
 +++
 
 The `idet` filter analyzes video frames and reports whether the content is interlaced (top-field-first or bottom-field-first), progressive, or contains repeated fields (a sign of telecine). It outputs frame classification metadata and cumulative statistics, making it useful for quality control and automated pipeline decisions about whether to apply deinterlacing.

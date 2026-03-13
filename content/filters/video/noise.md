@@ -13,6 +13,7 @@ since = ""
 see_also = []
 parameters = ["all_seed", "all_strength", "all_flags", "c0_seed", "c0_strength", "c0_flags"]
 cohort = 2
+source_file = "libavfilter/vf_noise.c"
 +++
 
 The `noise` filter adds noise or grain to video frames. It can generate uniform, Gaussian, or temporally-correlated noise on any combination of color planes. Common uses include adding film grain for aesthetic purposes, simulating film stock, or reducing banding by dithering smooth gradients.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["minterpolate", "fps", "mpdecimate"]
 parameters = ["fps", "interp_start", "interp_end", "scene", "flags"]
 cohort = 2
+source_file = "libavfilter/vf_framerate.c"
 +++
 
 The `framerate` filter converts progressive video to a different frame rate by blending adjacent frames with configurable linear interpolation weights. Unlike `minterpolate`, it does not perform motion estimation — it simply cross-fades between frames, making it faster and more predictable. It detects scene changes to avoid blending across cuts. Designed exclusively for progressive content — deinterlace first if needed.

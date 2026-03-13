@@ -13,6 +13,7 @@ since = ""
 see_also = ["showwavespic", "showfreqs", "showvolume"]
 parameters = ["size", "mode", "n", "rate", "split_channels", "colors", "scale", "draw", "filter"]
 cohort = 3
+source_file = "libavfilter/avf_showwaves.c"
 +++
 
 The `showwaves` filter converts an audio stream into an animated waveform video. It supports several rendering modes — point, line, p2p (peak-to-peak), and cline (centered line) — and can display all channels merged or split into separate rows. It is commonly used for YouTube music visualizations, podcast videos, and audio quality inspection.

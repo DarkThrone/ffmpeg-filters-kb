@@ -13,6 +13,7 @@ since = ""
 see_also = ["blackframe", "silencedetect", "scdet"]
 parameters = ["noise", "duration"]
 cohort = 3
+source_file = "libavfilter/vf_freezedetect.c"
 +++
 
 The `freezedetect` filter identifies frozen video — segments where consecutive frames show no significant change — and logs the start, duration, and end of each freeze event. It is used in broadcast playout monitoring to catch encoder stalls, dropped feeds, or slate/bug errors. The video stream passes through unchanged; detections are logged to stderr and attached as frame metadata.

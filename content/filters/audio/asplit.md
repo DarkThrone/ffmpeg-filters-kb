@@ -13,6 +13,7 @@ since = ""
 see_also = ["amix", "anull", "aformat"]
 parameters = ["outputs"]
 cohort = 1
+source_file = "libavfilter/split.c"
 +++
 
 The `asplit` filter duplicates an audio stream into multiple identical output streams. Each output is an independent copy of the input that can be routed to a different branch of a filter graph. Use it whenever you need to apply different processing chains to the same audio source, or when you want to mix a processed version back with the original (parallel processing).

@@ -13,6 +13,7 @@ since = ""
 see_also = ["eq", "curves"]
 parameters = ["exposure", "black"]
 cohort = 2
+source_file = "libavfilter/vf_exposure.c"
 +++
 
 The `exposure` filter adjusts the overall brightness of video using an exposure compensation value expressed in EV (exposure value) stops, similar to the exposure slider in photo editing applications. Positive values brighten; negative values darken. The `black` parameter independently lifts or lowers the black point.

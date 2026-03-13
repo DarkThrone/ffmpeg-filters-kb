@@ -13,6 +13,7 @@ since = ""
 see_also = ["bwdif"]
 parameters = ["mode", "parity", "deint"]
 cohort = 2
+source_file = "libavfilter/vf_yadif.c"
 +++
 
 The `yadif` filter ("Yet Another Deinterlacing Filter") removes interlacing artifacts from video by blending or reconstructing missing lines using spatial and temporal information from adjacent frames. It is the most commonly used deinterlacing filter in FFmpeg, offering a good balance of quality and speed. For higher quality, see `bwdif`.

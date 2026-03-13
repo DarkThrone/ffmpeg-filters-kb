@@ -13,6 +13,7 @@ since = ""
 see_also = ["afade", "apad", "anull"]
 parameters = ["start", "end", "duration", "start_pts", "end_pts", "start_sample", "end_sample"]
 cohort = 1
+source_file = "libavfilter/trim.c"
 +++
 
 The `atrim` filter extracts a continuous subrange from an audio stream and drops all samples outside that range. It can be specified by wall-clock timestamps, PTS values in samples, or by absolute sample count. Use it to cut out a specific section of audio without re-encoding the container, or to chain with `asetpts` to reset timestamps after trimming.

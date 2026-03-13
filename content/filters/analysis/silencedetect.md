@@ -13,6 +13,7 @@ since = ""
 see_also = ["silenceremove", "freezedetect", "volumedetect"]
 parameters = ["noise", "duration", "mono"]
 cohort = 3
+source_file = "libavfilter/af_silencedetect.c"
 +++
 
 The `silencedetect` filter monitors audio level and logs an event when the signal stays below a configurable noise floor for at least a minimum duration. It sets `lavfi.silence_start`, `lavfi.silence_duration`, and `lavfi.silence_end` frame metadata, and prints to stderr. It is used to find gaps in recordings, split audio at silence, or quality-check broadcast playout. The audio passes through unchanged.

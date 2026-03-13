@@ -13,6 +13,7 @@ since = ""
 see_also = ["testsrc2", "smptebars", "rgbtestsrc"]
 parameters = ["size", "rate", "duration", "sar"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `testsrc` source generates an animated test video pattern with a color patch grid, a scrolling gradient bar, and a live frame-number counter. It is mainly used for pipeline testing, format verification, and building filter graphs without needing a real input file. All video test sources share the same common parameters (`size`, `rate`, `duration`, `sar`).

@@ -13,6 +13,7 @@ since = ""
 see_also = ["amerge", "amix", "aformat"]
 parameters = []
 cohort = 1
+source_file = "libavfilter/af_pan.c"
 +++
 
 The `pan` filter provides full control over how input audio channels are combined into output channels. Unlike the `-ac` option, which applies a fixed automatic downmix, `pan` lets you specify exact gain coefficients for each output channel, making it suitable for custom stereo downmixes from surround sources, channel remapping, muting individual channels, and panning mono signals anywhere in a multi-channel layout.

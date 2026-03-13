@@ -13,6 +13,7 @@ since = ""
 see_also = ["select", "setpts", "format"]
 parameters = []
 cohort = 1
+source_file = "libavfilter/vf_null.c"
 +++
 
 The `null` filter passes every video frame from input to output without any modification. It is a no-op and has no effect on the video content, timestamps, or metadata. Its primary uses are in testing filtergraph pipelines, as a placeholder when a filter is conditionally needed, and as a required endpoint when using `-filter_complex` without a terminal filter.

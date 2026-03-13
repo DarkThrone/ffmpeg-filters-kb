@@ -13,6 +13,7 @@ since = ""
 see_also = ["reverse", "atrim", "asetpts"]
 parameters = []
 cohort = 3
+source_file = "libavfilter/f_reverse.c"
 +++
 
 The `areverse` filter plays audio backwards by buffering all samples in memory and emitting them in reverse order. It is the audio counterpart to the `reverse` video filter, and they are typically used together to create a fully reversed audio/video clip. Reverse audio is commonly used in music production (for reverse reverb effects), film sound design, and creative edits.

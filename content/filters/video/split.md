@@ -13,6 +13,7 @@ since = ""
 see_also = ["concat", "overlay", "select"]
 parameters = ["outputs"]
 cohort = 1
+source_file = "libavfilter/split.c"
 +++
 
 The `split` filter takes a single input video stream and produces N identical copies of it. This is essential in filtergraph pipelines where the same source needs to feed multiple downstream filters simultaneously — for example, creating a preview thumbnail alongside the main encode, or constructing a side-by-side comparison. The audio equivalent is `asplit`. The default number of outputs is 2.

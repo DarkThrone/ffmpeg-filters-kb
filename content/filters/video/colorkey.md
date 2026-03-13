@@ -13,6 +13,7 @@ since = ""
 see_also = ["chromakey", "overlay"]
 parameters = ["color", "similarity", "blend"]
 cohort = 2
+source_file = "libavfilter/vf_colorkey.c"
 +++
 
 The `colorkey` filter removes a specific color from video by making pixels that match the key color fully or partially transparent. Unlike `chromakey` which operates in YUV color space, `colorkey` works in RGB and is more accurate for exact color matching. It is useful for removing solid colored backgrounds in title cards, motion graphics, and screen recordings.

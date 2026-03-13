@@ -13,6 +13,7 @@ since = ""
 see_also = ["colorbalance"]
 parameters = ["temperature", "mix", "pl"]
 cohort = 2
+source_file = "libavfilter/vf_colortemperature.c"
 +++
 
 The `colortemperature` filter adjusts the white balance of a video by simulating the effect of different color temperatures of light. Lower Kelvin values (2000–4000K) produce warm amber/orange tones (like candlelight or tungsten), while higher values (7000–10000K) produce cool blue tones (like a cloudy sky). It is useful for correcting footage shot under the wrong white balance preset.

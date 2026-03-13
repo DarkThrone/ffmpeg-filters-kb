@@ -13,6 +13,7 @@ since = ""
 see_also = ["aformat", "volume"]
 parameters = ["level_in", "level_out", "bits", "mix", "mode", "dc", "aa", "samples", "lfo", "lforange", "lforate"]
 cohort = 2
+source_file = "libavfilter/af_acrusher.c"
 +++
 
 The `acrusher` filter simulates the effect of reducing audio bit depth, creating the harsh, quantization-distorted sound characteristic of early digital audio, lo-fi electronics, and video game music. Unlike simply changing the bit depth, it produces the *perceptual* effect while keeping the actual sample depth unchanged. It supports linear and logarithmic quantization, anti-aliasing, DC offset, and optional LFO modulation for dynamic bit-crushing effects.

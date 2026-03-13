@@ -13,6 +13,7 @@ since = ""
 see_also = ["hue", "colorbalance", "curves"]
 parameters = ["brightness", "contrast", "saturation", "gamma", "gamma_r", "gamma_g", "gamma_b", "gamma_weight", "eval"]
 cohort = 1
+source_file = "libavfilter/vf_eq.c"
 +++
 
 The `eq` filter provides traditional video equalizer controls: brightness, contrast, saturation, and gamma. It supports per-channel gamma adjustments (red, green, blue) for fine-grained color grading, and all parameters accept arithmetic expressions, enabling dynamic changes per frame. The filter can be applied once at initialization or reevaluated every frame depending on the `eval` setting.

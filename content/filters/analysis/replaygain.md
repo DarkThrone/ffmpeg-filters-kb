@@ -13,6 +13,7 @@ since = ""
 see_also = ["ebur128", "volumedetect", "loudnorm"]
 parameters = ["track_gain", "track_peak"]
 cohort = 3
+source_file = "libavfilter/af_replaygain.c"
 +++
 
 The `replaygain` filter scans an audio stream and computes the ReplayGain track gain (in dB) and track peak values according to the ReplayGain 2.0 specification. The audio passes through unmodified; the results are printed at the end of the stream and exported as filter options. The computed values can then be written as tags to audio files so players can apply consistent loudness normalization without re-encoding.

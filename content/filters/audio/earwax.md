@@ -13,6 +13,7 @@ since = ""
 see_also = ["haas", "apulsator", "extrastereo"]
 parameters = []
 cohort = 3
+source_file = "libavfilter/af_earwax.c"
 +++
 
 The `earwax` filter adds head-related transfer function (HRTF) cues to stereo audio so that when listened to on headphones, the stereo image appears to come from in front of and around the listener rather than from inside the head. It processes 44.1kHz stereo audio (CD format) by applying cross-feed and spectral shaping. Ported from SoX.

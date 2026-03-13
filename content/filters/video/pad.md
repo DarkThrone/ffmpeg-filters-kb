@@ -13,6 +13,7 @@ since = ""
 see_also = ["scale", "crop", "overlay"]
 parameters = ["width", "height", "x", "y", "color", "eval", "aspect"]
 cohort = 1
+source_file = "libavfilter/vf_pad.c"
 +++
 
 The `pad` filter adds colored borders around the input video to produce a larger output canvas. You specify the desired output dimensions and the `(x, y)` offset at which the original frame is placed. All parameters accept arithmetic expressions, making it easy to center the input, create letterbox/pillarbox effects, or add exact pixel margins. The padding area is filled with a configurable color (default black).

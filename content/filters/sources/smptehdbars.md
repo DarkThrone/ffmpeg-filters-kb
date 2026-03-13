@@ -13,6 +13,7 @@ since = ""
 see_also = ["smptebars", "pal100bars"]
 parameters = ["size", "rate", "duration"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `smptehdbars` source generates SMPTE RP 219-2002 high-definition color bars — the HD standard for broadcast monitor calibration and signal testing. It differs from SD `smptebars` in structure: it includes 75% color bars in the upper section, a three-level ramp in the lower left, and a cyan/grey/yellow segment for white balance and gamut testing.

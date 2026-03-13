@@ -13,6 +13,7 @@ since = ""
 see_also = ["acompressor", "agate"]
 parameters = ["level_in", "level_out", "limit", "attack", "release", "asc", "asc_level", "level"]
 cohort = 2
+source_file = "libavfilter/af_alimiter.c"
 +++
 
 The `alimiter` filter applies a lookahead peak limiter to audio, ensuring that no sample exceeds the configured `limit` ceiling. Unlike a compressor, a limiter has an effectively infinite ratio: any peak above the threshold is hard-limited. It includes optional auto-level control (ASC) to prevent pumping artifacts on sustained loud signals.

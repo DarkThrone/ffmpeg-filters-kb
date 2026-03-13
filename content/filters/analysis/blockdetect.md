@@ -13,6 +13,7 @@ since = ""
 see_also = ["blurdetect", "deblock"]
 parameters = ["period_min", "period_max", "planes"]
 cohort = 3
+source_file = "libavfilter/vf_blockdetect.c"
 +++
 
 The `blockdetect` filter measures the severity of DCT blocking artifacts in compressed video without modifying the stream. It is based on the Muijs–Kirenko no-reference blocking artifact measure: it looks for periodic pixel grid patterns at the block boundaries typical of heavy MPEG/H.264 quantization. The score is attached as `lavfi.block` frame metadata and can drive automated quality reports or `select` filter decisions.

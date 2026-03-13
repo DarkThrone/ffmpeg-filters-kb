@@ -13,6 +13,7 @@ since = ""
 see_also = ["yadif", "bwdif", "fieldmatch"]
 parameters = ["thresh", "map", "order", "sharp", "twoway"]
 cohort = 3
+source_file = "libavfilter/vf_kerndeint.c"
 +++
 
 The `kerndeint` filter deinterlaces video using Donald Graft's adaptive kernel algorithm. Unlike simple field-drop deinterlacers, `kerndeint` detects which pixel rows are actually interlaced (show combing) and applies processing only there, preserving quality in non-interlaced areas. It can optionally apply sharpening to recovered regions. For most use cases, `yadif` or `bwdif` are preferred, but `kerndeint` can work well for specific content types.

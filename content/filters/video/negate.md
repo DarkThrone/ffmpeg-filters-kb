@@ -13,6 +13,7 @@ since = ""
 see_also = ["lut", "colorbalance"]
 parameters = ["components"]
 cohort = 2
+source_file = "libavfilter/vf_negate.c"
 +++
 
 The `negate` filter inverts the color of each pixel by subtracting each component value from the maximum value (`maxval - val`). Applied to all channels it produces a photographic negative. Individual channels can be selectively negated using the `components` parameter, enabling effects like luma inversion while preserving hue.

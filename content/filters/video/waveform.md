@@ -13,6 +13,7 @@ since = ""
 see_also = ["vectorscope", "histogram"]
 parameters = ["mode", "intensity", "mirror", "display", "components", "envelope", "filter", "graticule", "opacity", "flags", "bgopacity"]
 cohort = 2
+source_file = "libavfilter/vf_waveform.c"
 +++
 
 The `waveform` filter generates a video waveform monitor — a tool used in professional video production to analyze the luminance and chrominance levels of a video signal. The waveform shows the distribution of pixel values across each scanline, making it easy to spot clipping, crushing, or color casts. It outputs the waveform overlaid on or beside the video.

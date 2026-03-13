@@ -13,6 +13,7 @@ since = ""
 see_also = ["scale", "setsar", "paletteuse"]
 parameters = ["pix_fmts", "color_spaces", "color_ranges", "alpha_modes"]
 cohort = 1
+source_file = "libavfilter/vf_format.c"
 +++
 
 The `format` filter requests that libavfilter convert the input video to one of the listed pixel formats. If the input is already in one of the specified formats, it passes through unchanged. When multiple formats are listed (pipe-separated), libavfilter chooses the best match for the next filter in the chain. This is useful for ensuring an encoder or filter receives a format it supports, or for explicitly controlling color space and range metadata.

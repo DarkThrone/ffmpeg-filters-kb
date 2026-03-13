@@ -13,6 +13,7 @@ since = ""
 see_also = ["acompressor", "volume", "silencedetect"]
 parameters = ["framelen", "gausssize", "peak", "maxgain", "targetrms", "coupling", "correctdc", "compress", "threshold", "channels", "overlap"]
 cohort = 1
+source_file = "libavfilter/af_dynaudnorm.c"
 +++
 
 The `dynaudnorm` filter applies per-frame gain normalization so that each frame's peak magnitude approaches a target level. Unlike a static normalizer that computes one gain for the entire file, or a compressor that clips dynamic range, `dynaudnorm` uses a Gaussian-smoothed gain curve across frames to gently even out the volume of quiet and loud sections while retaining 100% of the dynamic range within each frame. It is well-suited for normalizing speech recordings, audio books, and archival material with highly variable loudness.

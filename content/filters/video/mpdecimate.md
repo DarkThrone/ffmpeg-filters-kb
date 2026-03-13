@@ -13,6 +13,7 @@ since = ""
 see_also = ["minterpolate", "idet", "framerate"]
 parameters = ["max", "keep", "hi", "lo", "frac"]
 cohort = 2
+source_file = "libavfilter/vf_mpdecimate.c"
 +++
 
 The `mpdecimate` filter removes frames that are nearly identical to the previous frame, reducing the effective frame rate without re-encoding. Its primary use is for extremely low-bitrate streaming, but it also helps fix incorrectly inverse-telecined video (where duplicate fields create judder). The `hi`/`lo`/`frac` thresholds control how similar a frame must be to be considered a duplicate.

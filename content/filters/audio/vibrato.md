@@ -13,6 +13,7 @@ since = ""
 see_also = ["tremolo"]
 parameters = ["f", "d"]
 cohort = 2
+source_file = "libavfilter/af_vibrato.c"
 +++
 
 The `vibrato` filter applies frequency modulation (FM) to audio, creating a regular pitch oscillation — the same effect used by singers and instrumentalists when they apply vibrato. Unlike `tremolo` (which modulates amplitude/volume), vibrato modulates pitch. The `f` parameter sets how fast the pitch oscillates, and `d` controls how wide the pitch swings.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["acompressor"]
 parameters = ["attacks", "decays", "points", "soft-knee", "gain", "volume", "delay"]
 cohort = 2
+source_file = "libavfilter/af_compand.c"
 +++
 
 The `compand` filter performs combined compression and expansion of audio dynamic range. Unlike `acompressor`, it specifies the transfer function as a series of (input, output) level points, with separate attack and decay time constants. It can both compress loud sounds and expand (boost) quiet ones, and supports an initial volume level and a time-delayed bypass for de-noising.

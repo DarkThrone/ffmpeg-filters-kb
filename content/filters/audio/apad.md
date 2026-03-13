@@ -13,6 +13,7 @@ since = ""
 see_also = ["atrim", "afade", "aresample"]
 parameters = ["packet_size", "pad_len", "whole_len", "pad_dur", "whole_dur"]
 cohort = 1
+source_file = "libavfilter/af_apad.c"
 +++
 
 The `apad` filter appends silence to the end of an audio stream. It can add a fixed number of samples, extend the stream to a minimum total length, or pad indefinitely. Its most common use is in combination with the `-shortest` FFmpeg option to prevent audio from ending before a longer video track.

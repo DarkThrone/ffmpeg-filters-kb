@@ -13,6 +13,7 @@ since = ""
 see_also = ["asplit", "aformat", "atrim"]
 parameters = []
 cohort = 1
+source_file = "libavfilter/af_anull.c"
 +++
 
 The `anull` filter passes every audio sample to its output without modification. It has no parameters and introduces no latency or processing overhead. Its primary uses are as a placeholder in filter graphs during development, as a no-op endpoint when a filter is syntactically required but no transformation is desired, and in testing pipelines to verify that audio passes through a graph correctly.

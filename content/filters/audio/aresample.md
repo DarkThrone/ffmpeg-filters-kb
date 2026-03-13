@@ -13,6 +13,7 @@ since = ""
 see_also = ["aformat", "atempo", "apad"]
 parameters = []
 cohort = 1
+source_file = "libavfilter/af_aresample.c"
 +++
 
 The `aresample` filter converts audio to a different sample rate and can also stretch or compress audio timestamps to maintain synchronization. It is powered by the `libswresample` library and exposes all of its resampler options. When no parameters are given, it acts as an automatic format adapter, inserting itself wherever a format conversion is needed in a filter graph.

@@ -13,6 +13,7 @@ since = ""
 see_also = ["apad", "concat", "tile"]
 parameters = ["start", "stop", "start_mode", "stop_mode", "start_duration", "stop_duration", "color"]
 cohort = 2
+source_file = "libavfilter/vf_tpad.c"
 +++
 
 The `tpad` filter adds temporal padding to a video stream — inserting extra frames at the beginning (to delay the start) or at the end (to extend it). It can add solid-color frames or clone the first/last frame, and supports both frame counts and duration-based specifications. This is useful for synchronizing streams, creating freeze frames, or adding holds before/after the content.

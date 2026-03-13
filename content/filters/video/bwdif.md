@@ -13,6 +13,7 @@ since = ""
 see_also = ["yadif"]
 parameters = ["mode", "parity", "deint"]
 cohort = 2
+source_file = "libavfilter/vf_bwdif.c"
 +++
 
 The `bwdif` filter ("Bob Weaver Deinterlacing Filter") is a motion-adaptive deinterlacer that uses temporal and spatial information to reconstruct missing lines. It generally produces cleaner results than `yadif` on fast motion, with fewer combing artifacts. It accepts the same parameters as `yadif` and can be used as a drop-in replacement.

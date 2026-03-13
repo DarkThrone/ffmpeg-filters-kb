@@ -13,6 +13,7 @@ since = ""
 see_also = []
 parameters = ["high", "low", "mode", "planes"]
 cohort = 2
+source_file = "libavfilter/vf_edgedetect.c"
 +++
 
 The `edgedetect` filter detects edges in video frames using the Canny algorithm, with multiple output modes for creative and analytical use. In `wires` mode, it produces a classic edge-detection output (bright lines on black). In `colormix` mode, it blends the edge signal with the original video for an artistic effect.

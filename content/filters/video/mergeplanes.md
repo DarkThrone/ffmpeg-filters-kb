@@ -13,6 +13,7 @@ since = ""
 see_also = ["extractplanes", "split"]
 parameters = ["mapping", "format", "map0s", "map0p", "map1s", "map1p", "map2s", "map2p", "map3s", "map3p"]
 cohort = 2
+source_file = "libavfilter/vf_mergeplanes.c"
 +++
 
 The `mergeplanes` filter combines individual plane streams from up to 4 input streams into a single output pixel format. The `mapping` parameter is a hexadecimal bitmap specifying which input stream and plane feeds each output plane. It is the counterpart to `extractplanes`, and together they enable processing individual color components with arbitrary filter chains.

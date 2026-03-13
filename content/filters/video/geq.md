@@ -13,6 +13,7 @@ since = ""
 see_also = ["lut"]
 parameters = ["lum_expr", "cb_expr", "cr_expr", "r_expr", "g_expr", "b_expr", "a_expr", "interpolation"]
 cohort = 2
+source_file = "libavfilter/vf_geq.c"
 +++
 
 The `geq` filter evaluates a mathematical expression for every pixel in the frame, allowing completely custom per-pixel transformations. Unlike `lut` (which operates on a single channel's value), `geq` expressions can reference neighbouring pixels, the current coordinates, frame timing, and samples from any channel — enabling effects like custom blurs, edge detection, coordinate warping, and procedural patterns.

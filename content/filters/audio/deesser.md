@@ -13,6 +13,7 @@ since = ""
 see_also = ["afftdn", "highpass"]
 parameters = ["i", "m", "f", "s"]
 cohort = 2
+source_file = "libavfilter/af_deesser.c"
 +++
 
 The `deesser` filter reduces harsh sibilant sounds — the piercing 's', 'sh', and 'ch' consonants common in vocal recordings — by detecting and attenuating the offending high-frequency energy. Unlike a static high-shelf EQ cut, it operates dynamically, only reducing treble when sibilance is detected. The `s` option lets you monitor just the removed frequencies to dial in the settings.

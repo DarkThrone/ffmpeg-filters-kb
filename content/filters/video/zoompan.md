@@ -13,6 +13,7 @@ since = ""
 see_also = ["scale", "crop", "setpts"]
 parameters = ["zoom", "x", "y", "d", "s", "fps"]
 cohort = 1
+source_file = "libavfilter/vf_zoompan.c"
 +++
 
 The `zoompan` filter applies a zoom and/or pan animation to each input frame, producing multiple output frames from a single source frame. This creates the classic "Ken Burns effect" — slow zooms into photos or video frames with a simultaneous panning motion. All parameters (`z`, `x`, `y`, `d`) accept per-frame expressions, giving full control over the trajectory. It is commonly used in photo slideshows, documentary-style edits, and motion graphics.

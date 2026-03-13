@@ -13,6 +13,7 @@ since = ""
 see_also = ["hflip", "transpose", "rotate"]
 parameters = []
 cohort = 1
+source_file = "libavfilter/vf_vflip.c"
 +++
 
 The `vflip` filter mirrors every frame of the input video along the horizontal axis, producing an upside-down reflection. It has no parameters and is lossless. Common use cases include correcting footage shot with an upside-down camera mount, creating reflection effects, or compositing where a flipped stream is required.

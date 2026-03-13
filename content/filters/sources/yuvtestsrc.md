@@ -13,6 +13,7 @@ since = ""
 see_also = ["rgbtestsrc", "testsrc"]
 parameters = ["size", "rate", "duration"]
 cohort = 3
+source_file = "libavfilter/vsrc_testsrc.c"
 +++
 
 The `yuvtestsrc` source generates a test pattern with Y (luma), Cb, and Cr (chroma) vertical stripes, useful for verifying that YUV components are mapped correctly and that chroma channel ordering is preserved through a processing pipeline.

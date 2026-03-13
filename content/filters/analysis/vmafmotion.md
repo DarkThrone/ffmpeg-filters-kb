@@ -13,6 +13,7 @@ since = ""
 see_also = ["psnr", "ssim", "siti"]
 parameters = ["stats_file"]
 cohort = 3
+source_file = "libavfilter/vf_vmafmotion.c"
 +++
 
 The `vmafmotion` filter computes the VMAF motion score — a per-frame temporal motion metric that is one of the sub-features used in Netflix's VMAF (Video Multi-method Assessment Fusion) model. It measures the mean absolute difference between consecutive frames after a low-pass filter. The filter passes video through unchanged and logs the mean motion score at the end. Per-frame scores can be written to a file.

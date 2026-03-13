@@ -13,6 +13,7 @@ since = ""
 see_also = ["adelay", "afade", "acompressor"]
 parameters = ["in_gain", "out_gain", "delays", "decays"]
 cohort = 1
+source_file = "libavfilter/af_aecho.c"
 +++
 
 The `aecho` filter simulates echoes and reflections by feeding delayed, attenuated copies of the input signal back into the output. Multiple echoes can be stacked by providing pipe-separated delay and decay lists. Use it to add depth to a voice recording, simulate outdoor environments, or create the classic "double-tracking" effect.

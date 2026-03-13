@@ -13,6 +13,7 @@ since = ""
 see_also = ["curves", "colorbalance", "eq"]
 parameters = ["rr", "rg", "rb", "ra", "gr", "gg", "gb", "ga", "br", "bg", "bb", "ba", "ar", "ag", "ab", "aa"]
 cohort = 2
+source_file = "libavfilter/vf_colorchannelmixer.c"
 +++
 
 The `colorchannelmixer` filter remixes the R, G, B, and A channels of video by applying a 4×4 matrix transformation. Each output channel is computed as a weighted sum of all four input channels, enabling complex color grading operations such as channel swapping, cross-processing effects, and colorspace approximations. It is one of the most flexible color manipulation tools in FFmpeg.

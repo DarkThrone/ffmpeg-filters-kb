@@ -13,6 +13,7 @@ since = ""
 see_also = ["aphasemeter", "ebur128", "silencedetect"]
 parameters = ["size", "algo"]
 cohort = 3
+source_file = "libavfilter/af_axcorrelate.c"
 +++
 
 The `axcorrelate` filter computes the normalized windowed cross-correlation between two input audio streams. The output value for each window ranges from −1 to +1: `+1` means the two inputs are identical in that window, `0` means uncorrelated, and `−1` means they are exactly out of phase (cancel each other when summed). It is used for audio synchronization detection, checking mono compatibility, and analyzing the relationship between two recordings of the same event.

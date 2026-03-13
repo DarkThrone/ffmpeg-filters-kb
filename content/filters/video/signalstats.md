@@ -13,6 +13,7 @@ since = ""
 see_also = ["waveform", "vectorscope", "histogram"]
 parameters = ["stat", "out", "color"]
 cohort = 2
+source_file = "libavfilter/vf_signalstats.c"
 +++
 
 The `signalstats` filter computes per-frame statistics about the video signal — luma (Y), chroma (U/V), saturation, and hue levels — and attaches them as `lavfi.signalstats.*` frame metadata. It is designed for digitization QC of analog video and can also visually highlight out-of-range pixels. The statistics are output to the FFmpeg log and can be captured with tools like `ffprobe`.

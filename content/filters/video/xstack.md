@@ -13,6 +13,7 @@ since = ""
 see_also = ["hstack", "vstack", "overlay"]
 parameters = ["inputs", "layout", "grid", "shortest", "fill"]
 cohort = 1
+source_file = "libavfilter/vf_stack.c"
 +++
 
 The `xstack` filter arranges multiple video streams into a freely configurable 2D layout within a single output frame. Unlike `hstack` and `vstack`, which only support single rows or columns, `xstack` can create grids, irregular arrangements, and any combination of positions using a coordinate-based layout syntax. For two inputs the default is a 2x1 side-by-side layout; for all other counts a `layout` or `grid` must be explicitly specified.

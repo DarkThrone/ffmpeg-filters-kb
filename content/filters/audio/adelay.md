@@ -13,6 +13,7 @@ since = ""
 see_also = ["aecho", "apad", "atrim"]
 parameters = ["delays", "all"]
 cohort = 1
+source_file = "libavfilter/af_adelay.c"
 +++
 
 The `adelay` filter shifts individual audio channels in time by a specified delay, padding the beginning with silence. Each channel can have an independent delay value, making it useful for fixing inter-channel timing mismatches, implementing Haas-effect stereo widening, or compensating for microphone placement differences.

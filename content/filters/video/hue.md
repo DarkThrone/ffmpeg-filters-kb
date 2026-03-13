@@ -13,6 +13,7 @@ since = ""
 see_also = ["eq", "colorbalance", "curves"]
 parameters = ["h", "H", "s", "b"]
 cohort = 1
+source_file = "libavfilter/vf_hue.c"
 +++
 
 The `hue` filter modifies the hue rotation and saturation of a video in the YCbCr color space, operating on the chroma channels while leaving luma (brightness) largely intact. The hue angle can be specified in degrees (`h`) or radians (`H`), and all parameters accept per-frame expressions, enabling animated color effects like cycling hues or time-based saturation fades. A brightness adjustment (`b`) is also available for simple luma tweaks.

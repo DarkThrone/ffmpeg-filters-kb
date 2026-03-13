@@ -13,6 +13,7 @@ since = ""
 see_also = ["boxblur", "smartblur", "nlmeans"]
 parameters = ["sigma", "steps", "planes", "sigmaV"]
 cohort = 2
+source_file = "libavfilter/vf_gblur.c"
 +++
 
 The `gblur` filter applies a Gaussian blur to video frames. Unlike `boxblur`, it uses a proper Gaussian kernel (approximated with iterative box passes), which produces a smoother, more natural-looking blur. It supports independent horizontal and vertical sigma values and can target specific planes.

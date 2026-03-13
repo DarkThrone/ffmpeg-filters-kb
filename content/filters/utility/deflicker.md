@@ -13,6 +13,7 @@ since = ""
 see_also = ["dejudder", "deshake"]
 parameters = ["size", "mode", "bypass"]
 cohort = 3
+source_file = "libavfilter/vf_deflicker.c"
 +++
 
 The `deflicker` filter reduces temporal luminance flickering — rapid frame-to-frame brightness variation caused by fluorescent lighting, high-speed cameras shooting at certain shutter speeds, or digitized analog sources. It computes a moving-window average of frame brightness (using one of several averaging modes) and normalizes each frame toward that average. The video content is otherwise unmodified.

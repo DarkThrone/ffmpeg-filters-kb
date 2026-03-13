@@ -13,6 +13,7 @@ since = ""
 see_also = ["trim", "split", "setpts"]
 parameters = ["n", "v", "a", "unsafe"]
 cohort = 1
+source_file = "libavfilter/avf_concat.c"
 +++
 
 The `concat` filter joins multiple synchronized video (and optionally audio) segments sequentially, producing a single continuous output stream. Unlike file-level concatenation, `concat` works inside the filtergraph, which allows you to filter each segment independently before joining. All segments must start at timestamp 0, have the same stream count per type, and matching resolution and format (or be explicitly normalized beforehand). The filter handles slight audio/video duration mismatches by padding the shorter stream with silence.

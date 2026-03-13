@@ -13,6 +13,7 @@ since = ""
 see_also = ["showwaves", "showfreqs", "aphasemeter"]
 parameters = ["size", "fps", "bar_h", "axis_h", "sono_h", "volume", "bar_v", "gamma", "basefreq", "endfreq", "tlength", "count", "fontcolor", "cscheme"]
 cohort = 3
+source_file = "libavfilter/avf_showcqt.c"
 +++
 
 The `showcqt` filter converts audio to a real-time spectrogram video using the Constant-Q Transform — a frequency analysis that spaces bins logarithmically, aligning with musical octaves and note intervals. The display can combine a scrolling sonogram (time-frequency heatmap) with a bar graph of instantaneous spectrum. Unlike FFT visualizers, `showcqt` maps frequency linearly to pitch, making it ideal for music analysis and visualization.

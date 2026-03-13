@@ -13,6 +13,7 @@ since = ""
 see_also = ["nlmeans", "hqdn3d"]
 parameters = ["sigma", "block", "bstep", "group", "range", "mstep", "thmse", "hdthr", "estim", "ref", "planes"]
 cohort = 2
+source_file = "libavfilter/vf_bm3d.c"
 +++
 
 The `bm3d` filter implements Block-Matching 3D denoising, one of the highest-quality denoising algorithms. It works by finding similar blocks throughout the frame, stacking them into a 3D array, and applying collaborative filtering in the transform domain. It supports a two-pass mode: a fast `basic` estimate followed by a high-quality `final` pass that uses the first estimate as a reference for even better denoising.

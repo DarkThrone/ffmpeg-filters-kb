@@ -13,6 +13,7 @@ since = ""
 see_also = ["select", "fps", "scale"]
 parameters = ["n", "log"]
 cohort = 1
+source_file = "libavfilter/vf_thumbnail.c"
 +++
 
 The `thumbnail` filter analyzes batches of consecutive frames and selects the single most representative frame from each batch, discarding the rest. Representativeness is determined by histogram analysis — the frame whose histogram most closely resembles the mean of the batch is chosen. This makes it ideal for generating accurate thumbnails or preview images from video files. Combine it with `scale` and `-frames:v 1` to extract a single thumbnail image.

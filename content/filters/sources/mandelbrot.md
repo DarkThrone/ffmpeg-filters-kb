@@ -13,6 +13,7 @@ since = ""
 see_also = ["cellauto", "life"]
 parameters = ["size", "rate", "start_x", "start_y", "start_scale", "end_scale", "end_pts", "maxiter", "inner", "outer"]
 cohort = 3
+source_file = "libavfilter/vsrc_mandelbrot.c"
 +++
 
 The `mandelbrot` source renders the Mandelbrot set fractal and animates a smooth zoom toward a configurable complex-plane point. Both inner (set interior) and outer (escape time) coloring modes are configurable. The zoom is logarithmic from `start_scale` to `end_scale` over `end_pts` frames.

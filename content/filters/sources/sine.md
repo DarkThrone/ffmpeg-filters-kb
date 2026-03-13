@@ -13,6 +13,7 @@ since = ""
 see_also = ["anoisesrc", "aevalsrc"]
 parameters = ["frequency", "beep_factor", "sample_rate", "duration", "samples_per_frame"]
 cohort = 3
+source_file = "libavfilter/asrc_sine.c"
 +++
 
 The `sine` source generates a bit-exact sine wave audio signal at a specified frequency. It is the standard way to produce a test tone in FFmpeg — commonly used as a 1 kHz calibration tone in broadcast leaders, or as a reference signal for audio testing. An optional periodic beep at a harmonic frequency can also be enabled.

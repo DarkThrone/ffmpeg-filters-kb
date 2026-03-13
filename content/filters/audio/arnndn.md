@@ -13,6 +13,7 @@ since = ""
 see_also = ["afftdn", "compand"]
 parameters = ["model", "mix"]
 cohort = 2
+source_file = "libavfilter/af_arnndn.c"
 +++
 
 The `arnndn` filter removes noise from speech audio using a Recurrent Neural Network (RNN) trained on a large corpus of speech and noise samples. Unlike `afftdn` which uses generic spectral subtraction, `arnndn` is optimized specifically for voice recordings and can cleanly separate speech from complex background noise (crowds, traffic, wind). Requires an external `.rnnn` model file.

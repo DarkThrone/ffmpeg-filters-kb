@@ -13,6 +13,7 @@ since = ""
 see_also = ["gblur", "smartblur"]
 parameters = ["luma_radius", "luma_power", "chroma_radius", "chroma_power", "alpha_radius", "alpha_power"]
 cohort = 2
+source_file = "libavfilter/vf_boxblur.c"
 +++
 
 The `boxblur` filter blurs video by averaging each pixel with its rectangular neighbourhood (a box blur). It applies the blur `power` times for each plane, with separate `radius` and `power` settings for luma, chroma, and alpha. Radii can be expressions referencing video dimensions.

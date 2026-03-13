@@ -13,6 +13,7 @@ since = ""
 see_also = ["vibrato"]
 parameters = ["f", "d"]
 cohort = 2
+source_file = "libavfilter/af_tremolo.c"
 +++
 
 The `tremolo` filter applies amplitude modulation (AM) to audio, creating a regular volume pulsation. It is the classic "tremolo arm" effect used on electric guitars and organ music. Unlike `vibrato` (which modulates pitch), tremolo modulates volume — making the sound swell and recede rhythmically.

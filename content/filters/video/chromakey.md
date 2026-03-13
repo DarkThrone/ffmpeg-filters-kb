@@ -13,6 +13,7 @@ since = ""
 see_also = ["colorkey", "overlay"]
 parameters = ["color", "similarity", "blend", "yuv"]
 cohort = 2
+source_file = "libavfilter/vf_chromakey.c"
 +++
 
 The `chromakey` filter removes a chroma key color (typically green or blue) from video by making matching pixels transparent. It operates in YUV color space, which is more robust on compressed video formats than the RGB-based `colorkey`. This is the standard way to remove green screen and blue screen backgrounds in FFmpeg.

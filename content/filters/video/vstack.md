@@ -13,6 +13,7 @@ since = ""
 see_also = ["hstack", "xstack", "overlay"]
 parameters = ["inputs", "shortest"]
 cohort = 1
+source_file = "libavfilter/vf_stack.c"
 +++
 
 The `vstack` filter places multiple video streams one above the other in a single column, producing a taller output frame. All input streams must share the same pixel format and the same width. It is faster than achieving the same result with `overlay` and `pad`, making it the preferred choice for vertical video strip compositions, top-and-bottom comparisons, and stacked camera layouts.

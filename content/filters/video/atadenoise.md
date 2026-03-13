@@ -13,6 +13,7 @@ since = ""
 see_also = ["hqdn3d", "nlmeans", "bm3d"]
 parameters = ["0a", "0b", "1a", "1b", "2a", "2b", "s", "p", "a"]
 cohort = 2
+source_file = "libavfilter/vf_atadenoise.c"
 +++
 
 The `atadenoise` filter reduces noise by averaging pixel values across multiple frames, adapting to scene content to avoid blurring in-motion areas. Per-plane thresholds (`a` and `b`) control sensitivity: threshold A reacts to abrupt changes (scene cuts, fast motion), while threshold B handles slow continuous changes (grain, sensor noise).

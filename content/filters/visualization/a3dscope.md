@@ -13,6 +13,7 @@ since = ""
 see_also = ["showwaves", "aphasemeter", "abitscope"]
 parameters = ["rate", "size", "fov", "roll", "pitch", "yaw", "xzoom", "yzoom", "zzoom", "xpos", "ypos", "zpos", "length"]
 cohort = 3
+source_file = "libavfilter/avf_a3dscope.c"
 +++
 
 The `a3dscope` filter converts audio into a 3D waveform visualization rendered as a video stream. The audio waveform is displayed in three dimensions with configurable camera angles, field of view, and zoom. The result is an animated 3D scope view that rotates through samples over time — primarily used for artistic audio visualizations.

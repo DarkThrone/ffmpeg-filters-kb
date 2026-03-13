@@ -13,6 +13,7 @@ since = ""
 see_also = ["highpass", "lowpass", "acompressor"]
 parameters = ["frequency", "gain", "width_type", "width", "mix", "channels", "normalize", "transform", "precision", "blocksize"]
 cohort = 1
+source_file = "libavfilter/af_biquads.c"
 +++
 
 The `equalizer` filter implements a standard two-pole peaking EQ — the same type found in hardware mixing consoles and digital audio workstations. It boosts or cuts a band of frequencies centered on a specified frequency, with the bandwidth controlled by the `width` parameter. Multiple `equalizer` instances can be chained in a single `-af` string to build a full parametric EQ.
