@@ -46,19 +46,12 @@
   <!-- Sidebar -->
   <nav class="sidebar" id="sidebar" aria-label="Filter navigation">
     <div class="sidebar-nav">
-      {% set nav_sections = [
-        ["Video Filters",        "filters/video/_index.md"],
-        ["Audio Filters",        "filters/audio/_index.md"],
-        ["Test Sources",         "filters/sources/_index.md"],
-        ["Visualization",        "filters/visualization/_index.md"],
-        ["Analysis & QC",        "filters/analysis/_index.md"],
-        ["Interlace & Telecine", "filters/interlace/_index.md"],
-        ["Utility & Timing",     "filters/utility/_index.md"]
-      ] %}
-      {% for nav in nav_sections %}
-        {% set sec = get_section(path=nav[1]) %}
+      {% set sections_paths = "filters/video/_index.md|filters/audio/_index.md|filters/sources/_index.md|filters/visualization/_index.md|filters/analysis/_index.md|filters/interlace/_index.md|filters/utility/_index.md" | split(pat="|") %}
+      {% set sections_titles = "Video Filters|Audio Filters|Test Sources|Visualization|Analysis & QC|Interlace & Telecine|Utility & Timing" | split(pat="|") %}
+      {% for i in range(end=7) %}
+        {% set sec = get_section(path=sections_paths[i]) %}
         <div class="nav-section">
-          <div class="nav-section-title">{{ nav[0] }}</div>
+          <div class="nav-section-title">{{ sections_titles[i] }}</div>
           {% for page in sec.pages %}
             <a class="nav-item {% if current_path == page.path %}active{% endif %}"
                href="{{ page.permalink }}">{{ page.title }}</a>
