@@ -278,6 +278,16 @@
   flex-wrap: wrap;
 }
 
+// Mobile Ko-fi footer — hidden on desktop, shown on mobile
+.mobile-kofi-footer {
+  display: none;
+  justify-content: center;
+  padding: $space-lg 0;
+  border-top: 1px solid $color-border;
+  background: $color-surface;
+  img { display: block; }
+}
+
 // ─── Mobile component overrides ─────────────────────────────────────────────
 @media (max-width: $bp-mobile) {
   // Compact search trigger — icon only
@@ -306,8 +316,11 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  // Hide Ko-fi button on very small screens to save header space
+  // Hide Ko-fi button in header on mobile (shown in footer instead)
   .kofi-btn { display: none; }
+
+  // Show Ko-fi footer on mobile
+  .mobile-kofi-footer { display: flex; }
 
   // Compact home hero padding
   .home-hero { padding: $space-lg 0 $space-md; }
