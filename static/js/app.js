@@ -17,13 +17,24 @@ function toggleSidebar() {
   setSidebarCollapsed(!sidebar.classList.contains('collapsed'));
 }
 
-// Restore sidebar state from localStorage
-if (localStorage.getItem('sidebar-collapsed') === 'true') {
+const isMobile = () => window.matchMedia('(max-width: 768px)').matches;
+
+// Restore sidebar state — default collapsed on mobile
+if (isMobile()) {
+  setSidebarCollapsed(true);
+} else if (localStorage.getItem('sidebar-collapsed') === 'true') {
   setSidebarCollapsed(true);
 }
 
 sidebarToggle.addEventListener('click', toggleSidebar);
 sidebarEdgeToggle.addEventListener('click', toggleSidebar);
+
+// On mobile, collapse sidebar when a nav link is tapped
+sidebar.addEventListener('click', (e) => {
+  if (isMobile() && e.target.closest('.nav-item')) {
+    setSidebarCollapsed(true);
+  }
+});
 
 // ─── Search Modal ────────────────────────────────────────────────────────────
 const searchModal  = document.getElementById('search-modal');

@@ -39,8 +39,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border-radius: 6px;
   border: 1px solid $color-border;
   background: transparent;
@@ -259,4 +259,57 @@
   font-size: 0.8rem;
   .nav-llm-icon { flex-shrink: 0; }
   &:hover { color: $color-text-secondary; }
+}
+
+// Home page hero
+.home-hero {
+  padding: 48px 0 32px;
+}
+.home-subtitle {
+  font-size: 1.1rem;
+  color: $color-text-secondary;
+  margin-top: 12px;
+  max-width: 520px;
+}
+.home-badges {
+  margin-top: $space-lg;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+// ─── Mobile component overrides ─────────────────────────────────────────────
+@media (max-width: $bp-mobile) {
+  // Compact search trigger — icon only
+  .search-trigger {
+    .search-label, kbd { display: none; }
+    padding: 6px 8px;
+    gap: 0;
+  }
+
+  // Larger tap targets for nav items
+  .sidebar-nav .nav-item {
+    padding: 8px $space-md 8px 20px;
+  }
+
+  // Single-column filter grid on small screens
+  .filter-grid {
+    grid-template-columns: 1fr;
+    gap: $space-sm;
+  }
+
+  // Horizontally scrollable tables
+  .param-table,
+  .content-inner table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  // Hide Ko-fi button on very small screens to save header space
+  .kofi-btn { display: none; }
+
+  // Compact home hero padding
+  .home-hero { padding: $space-lg 0 $space-md; }
+  .home-subtitle { font-size: 1rem; }
 }
